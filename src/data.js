@@ -75,7 +75,7 @@ export function dataLunga(iso) {
 /** „3 exerciții”, „1 exercițiu”, „22 de teste” */
 export function plural(n, unu, multe) {
   if (n === 1) return `1 ${unu}`;
-  const de = n % 100 >= 20 || n % 100 === 0 ? 'de ' : '';
+  const de = n >= 20 && (n % 100 >= 20 || n % 100 === 0) ? 'de ' : '';
   return `${n} ${de}${multe}`;
 }
 
