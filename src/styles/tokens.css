@@ -1,0 +1,77 @@
+/* Tokenii din DESIGN.md. Componentele folosesc doar aceste variabile. */
+:root {
+  /* culori */
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --border-control: #848c98;
+  --text: #1f2937;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-subtle: #eff4ff;
+  --success: #166534;
+  --success-bg: #dcfce7;
+  --error: #b91c1c;
+  --error-bg: #fef2f2;
+  --topic-bg: #f3f4f6;
+  --toast-action: #93c5fd;
+  --toast-close: #d1d5db;
+  --on-color: #ffffff;
+  --overlay: rgba(31, 41, 55, 0.4);
+
+  /* culori de grupă */
+  --group-teal: #0f766e;
+  --group-indigo: #4338ca;
+  --group-amber: #b45309;
+  --group-rose: #be123c;
+
+  /* tipografie */
+  --font: 'Inter', system-ui, sans-serif;
+  --fs-display: 32px;
+  --lh-display: 40px;
+  --fs-h2: 20px;
+  --lh-h2: 28px;
+  --fs-h3: 16px;
+  --lh-h3: 24px;
+  --fs-body: 16px;
+  --lh-body: 24px;
+  --fs-sm: 14px;
+  --lh-sm: 20px;
+  --fs-caption: 12px;
+  --lh-caption: 16px;
+
+  /* spațiere (grilă de 8) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 40px;
+  --s-8: 48px;
+  --s-9: 64px;
+
+  /* forme */
+  --r-btn: 8px;
+  --r-card: 12px;
+  --r-pill: 999px;
+  --r-nav: 0 24px 24px 0;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* înălțimi */
+  --h-topbar: 64px;
+  --h-nav: 44px;
+  --h-row: 56px;
+  --h-btn: 40px;
+  --h-chip: 36px;
+  --h-thead: 40px;
+  --h-toast: 48px;
+  --h-badge: 24px;
+  --w-sidebar: 272px;
+  --w-content: 1040px;
+  --w-search: 400px;
+  --w-card: 330px;
+}
