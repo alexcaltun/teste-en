@@ -141,7 +141,8 @@ export function interpreteaza(text) {
   const nS = subiecte.filter(potrivesteSubiect).length;
   const nT = teste.filter(potrivesteTest).length;
   if (!nS && !nT) return { path: '/teste', query: { ...(an ? { an: String(an) } : {}), q: text.trim() }, gol: true };
-  const query = { q: q };
+  // în adresă păstrăm textul cum l-a scris utilizatorul (cu diacritice), fără an
+  const query = { q: text.replace(/\b20\d\d\b/, ' ').replace(/\s+/g, ' ').trim() || q };
   if (an) query.an = String(an);
   return nS >= nT ? { path: '/subiecte', query } : { path: '/teste', query };
 }
