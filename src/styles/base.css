@@ -575,5 +575,10 @@ h2 {
   }
   .summary__right {
     margin-left: 0;
+    flex-wrap: wrap;
+    gap: var(--s-2) var(--s-4);
+  }
+  .progress__bar {
+    width: 96px;
   }
 }
