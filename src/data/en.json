@@ -1,0 +1,3859 @@
+{
+  "actualizat": "2026-11-19",
+  "sursa": "https://www.e3.ro/teste-evaluare-nationala-2022/",
+  "programa": "http://www.e3.ro/wp-content/uploads/2020/04/Anexa_1_ordin_ministru_4115.MATEMATICA.pdf",
+  "teste": [
+    {
+      "id": "t2027-1jv0kpn",
+      "an": 2027,
+      "set": null,
+      "numeOriginal": "MODEL M.E.N. (1.nov.2026)",
+      "nume": "Model M.E.N. (1.nov.2026)",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/11/ENVIII_Matematica_2027_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/11/ENVIII_Matematica_2027_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2027-05xz55k",
+      "an": 2027,
+      "set": null,
+      "numeOriginal": "TEST 1 – INIȚIAL Călărași 18.9.2026",
+      "nume": "Test 1 · inițial Călărași 18.9.2026",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/09/Test-initial-cls_8_matematica_-2026CL.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/09/Test-initial-cls_8_matematica_-2026CLbarem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0tausuk",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "EVALUAREA NAȚIONALĂ (24.iun.2026)",
+      "nume": "Evaluarea Națională (24.iun.2026)",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/06/ENVIII_Matematica_2026_Var_01_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/06/ENVIII_Matematica_2026_Bar_01_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1hn6bo8",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "EV. NAȚIONALĂ – rezerva (24.iun.2026)",
+      "nume": "Ev. Națională · rezerva (24.iun.2026)",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/06/ENVIII_Matematica_2026_Var_05_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/06/ENVIII_Matematica_2026_Bar_05_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0xodhjc",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "MODEL M.E.N. (28.apr.2026)",
+      "nume": "Model M.E.N. (28.apr.2026)",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/05/EN_VIII_Matematica_2026_Var_Simulare_2_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/05/EN_VIII_Matematica_2026_Bar_Simulare_2_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1i88k80",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "SIMULARE (17.mar.2026)",
+      "nume": "Simulare (17.mar.2026)",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/ENVIII_Matematica_2026_Var_Simulare_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/ENVIII_Matematica_2026_Bar_Simulare_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1l6f6p5",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "MODEL M.E.N. (1.nov.2025)",
+      "nume": "Model M.E.N. (1.nov.2025)",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/11/ENVIII_Matematica_2026_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/11/ENVIII_Matematica_2026_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-08kbpj1",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 1 – INIȚIAL Călărași 18/09/2025",
+      "nume": "Test 1 · inițial Călărași 18/09/2025",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/09/Test-initial-8_CL_matematica_18.09.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/09/Barem-test-initial-8_CL._matematica_18.09.2025.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0weuhzg",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 2 – INITIAL Botoșani I sep.2025",
+      "nume": "Test 2 · initial Botoșani I sep.2025",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/Bt.evaluareinitiala9.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/Bt.evaluareinitiala9.2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0ur1n5w",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 3 – INIȚIAL Botoșani II sep.2025",
+      "nume": "Test 3 · inițial Botoșani II sep.2025",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/Bt.evaluareinitiala9.2025v2.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/Bt.evaluareinitiala9.2025v2barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1o40v5d",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 4 – Brăila",
+      "nume": "Test 4 · Brăila",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/BR2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/BR2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1y8n5tp",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 5 – Ilfov (6nov2025)",
+      "nume": "Test 5 · Ilfov (6nov2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/11/VIII-Testare-de-Etapa-_EN_subiectIF.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/11/VIII-Testare-de-Etapa_EN_baremIF.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-01cfyh6",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 6 BT-IS-VS (9dec.2025)",
+      "nume": "Test 6 BT-IS-VS (9dec.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/BT.IS_.VS_.9.12.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/BT.IS_.VS_.9.12.2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1nd2roz",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 7 Constanța (dec.2025)",
+      "nume": "Test 7 Constanța (dec.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/CT.12.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/CT.12.2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-14697v1",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 8 ICHB (nov.2025)",
+      "nume": "Test 8 ICHB (nov.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/ICHB.11.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/ICHB.11.2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0l4th40",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 9 Mehedinți",
+      "nume": "Test 9 Mehedinți",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/MH2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/MH2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1al0osa",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 10 Suceava (nov.2025)",
+      "nume": "Test 10 Suceava (nov.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/SV.11.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/SV.11.2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0lizp1r",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 11 Timiș (dec.2025)",
+      "nume": "Test 11 Timiș (dec.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/TM12.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/TM12.2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-11b0w3w",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 12 Cluj (dec.2025)",
+      "nume": "Test 12 Cluj (dec.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/CJ2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/CJ2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1mvvz0k",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 13 Sibiu (dec.2025)",
+      "nume": "Test 13 Sibiu (dec.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/SB2025.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0a89v9t",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 14 Brăila",
+      "nume": "Test 14 Brăila",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/SUBIECT_SIMULARE_-EN8-_DEC_2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/BAREM_SIMULARE_-EN8-_DEC_2025_ok.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0n5qyaa",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 15 Olt",
+      "nume": "Test 15 Olt",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/OT2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/OT2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1mvzk92",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 16 Călărași",
+      "nume": "Test 16 Călărași",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/12/CL2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/12/CL2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0jqijus",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 17 Gorj",
+      "nume": "Test 17 Gorj",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/02/EN_Matematica_2026-Gorj.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/gj2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1yovy5l",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 18 Maramureș",
+      "nume": "Test 18 Maramureș",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/mm2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/mm2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-048zqsi",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 19 Suceava (ian.2026)",
+      "nume": "Test 19 Suceava (ian.2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/EN-SV2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/EN-SV2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0iq8xbt",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 20 Bihor (ian.2026)",
+      "nume": "Test 20 Bihor (ian.2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/EN.BH_.2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/EN.BH_.2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0bt6d6g",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 21 ILFOV (ian.2026)",
+      "nume": "Test 21 Ilfov (ian.2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/if2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/if2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0xj3jsz",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 22 Satu Mare",
+      "nume": "Test 22 Satu Mare",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/sm2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/sm2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-11d9ran",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 23 Hunedoara (ian.2026)",
+      "nume": "Test 23 Hunedoara (ian.2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/HD2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/hd2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0cji869",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 24 Constanța (Dynamis #32)",
+      "nume": "Test 24 Constanța (Dynamis #32)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/CT2026.1.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/CT2026.1barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1y5kqs4",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 25 Constanța (Dynamis #32)",
+      "nume": "Test 25 Constanța (Dynamis #32)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/CT2026.2.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/CT2026.2barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-1whfxnh",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 26 DOLJ",
+      "nume": "Test 26 Dolj",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/03/dj2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/03/dj2026barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-0d9l0u4",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 27 Constanța (feb.2026)",
+      "nume": "Test 27 Constanța (feb.2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/04/ct2026.3.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/04/ct2026.3barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-05nsjor",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 28 Călărași (mai 2026)",
+      "nume": "Test 28 Călărași (mai 2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/05/CL_Subiecte-simulare_EN_VIII_MAI_2026.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/05/CL_Simulare_EN_VIII_Barem_MAI_2026.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2026-02f8j88",
+      "an": 2026,
+      "set": null,
+      "numeOriginal": "TEST 29 Botoșani (mai 2026)",
+      "nume": "Test 29 Botoșani (mai 2026)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2026/06/BT2026mai1.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2026/06/BT2026mai1barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-0f6p8u2",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "EVALUAREA NAȚIONALĂ 25.iun.2025",
+      "nume": "Evaluarea Națională 25.iun.2025",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/ENVIII_Matematica_2025_Var_07_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/ENVIII_Matematica_2025_Bar_07_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-0zgoxrf",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "REZERVA E.N. 2025",
+      "nume": "Rezerva E.N. 2025",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/REZERVA-EVALUAREA-NATIONALA-2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/REZERVA-EVALUAREA-NATIONALA-2025-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1m3a7hn",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "Model MEN",
+      "nume": "Model MEN",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/11/ENVIII_Matematica_2025_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/11/ENVIII_Matematica_2025_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1okcdyg",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "SIMULARE (18.mar.2025)",
+      "nume": "Simulare (18.mar.2025)",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/03/ENVIII_Matematica_2025_var_simulare_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/03/ENVIII_Matematica_2025_bar_simulare_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1q28fq3",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "Test 1 Botosani (sept.2024)",
+      "nume": "Test 1 Botosani (sept.2024)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/11/Mate-var-1-Evaluare_initiala_clasa_a_VIII-a_24-25_Varianta1_Mate-BOTOSANI.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/11/Var-1-Barem_Evaluare_initiala_clasa_a_VIII-a_24-25_Varianta1_Mate-BOTOSANI.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-052hzru",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "Test 2 BUZĂU (nov. 2024)",
+      "nume": "Test 2 Buzău (nov. 2024)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/11/EN-Matematica-subiectBZ2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/11/EN-Matematica-baremBZ2024.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-0cxu6jn",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 3 Botoșani (dec. 2024)",
+      "nume": "Test 3 Botoșani (dec. 2024)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/12/1_MATE_Varianta_1_Simulare_judeteana_EN_VIII_ISJ_BT_12.12.2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/12/Barem_Simulare_EN_DEC_2024_Varianta_1.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1lt9lbf",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 4 Botoșani (dec.2024)",
+      "nume": "Test 4 Botoșani (dec.2024)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/12/2_MATE_Varianta_2_Simulare_judeteana_EN_VIII_ISJ_BT_12.12.2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/12/Barem_Simulare_EN_DEC_2024_Varianta_2.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1a0q865",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 5 Botoșani (apr. 2025)",
+      "nume": "Test 5 Botoșani (apr. 2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/BT.2025.1.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/BT.2025.1-barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1xwigvs",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 6 Botoșani (apr. 2025)",
+      "nume": "Test 6 Botoșani (apr. 2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/bt2.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/bt2.2025BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-0nc14ao",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 7 Timiș (dec.2024)",
+      "nume": "Test 7 Timiș (dec.2024)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/12/Subiect_mate_evaluare_nationala_decembrie_2024_Varianta-1-4.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/12/Barem_mate_evaluare_nationala_decembrie_2024_Varianta-1-3.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-0axcxu2",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 8 Covasna (ian.2025)",
+      "nume": "Test 8 Covasna (ian.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/02/EN_VIII_Matematica_2025_var_simulare-jud_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/02/EN_VIII_Matematica_2025_bar_simulare-jud.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1php5rz",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 9 Cluj (feb.2025)",
+      "nume": "Test 9 Cluj (feb.2025)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/02/ENVIII_Matematica_2025_var_01_LRO.CLUJ_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/02/ENVIII_Matematica_2025_bar_01_LRO.cluj_.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1m9144m",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 10 Constanța *",
+      "nume": "Test 10 Constanța *",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/03/CT12024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/03/CT12024BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1r6pdy7",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 11 Constanța *",
+      "nume": "Test 11 Constanța *",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/03/CT22024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/03/CT22024BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1mdhgwz",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 12 Constanța (mai)",
+      "nume": "Test 12 Constanța (mai)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/constanta-mai2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/constantaMAI2025barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1e5ylzy",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 13 Constanța (mai)",
+      "nume": "Test 13 Constanța (mai)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/constantaMAI2025.2.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/constantaMAI2025barem2.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1lzxbwe",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 14 Constanța (mai)",
+      "nume": "Test 14 Constanța (mai)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/CT.mai2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/CT.barem_.mai2025.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1p1qc51",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 15 Sibiu (aprilie)",
+      "nume": "Test 15 Sibiu (aprilie)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/SB.2025.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1g3q842",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 16 Sibiu (mai)",
+      "nume": "Test 16 Sibiu (mai)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/sb.mai2025-1.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/sb.b.mai2025.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1ingwuv",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 17 Vaslui",
+      "nume": "Test 17 Vaslui",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/VS.mai_.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/VS.b.mai_.2025.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-1j812l1",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 18 BACĂU (aprilie)",
+      "nume": "Test 18 Bacău (aprilie)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/BC.2025.mai_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/BC.2025.mai_.barem_.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2025-05xm2ix",
+      "an": 2025,
+      "set": null,
+      "numeOriginal": "TEST 19 GORJ",
+      "nume": "Test 19 Gorj",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2025/06/GJ.2025.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2025/06/GJ.2025.barem_.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-1cr8p92",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "EVALUARE NATIONALA 27.iun.2024",
+      "nume": "Evaluare Nationala 27.iun.2024",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/06/ENVIII_Matematica_2024_var_07_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/06/ENVIII_Matematica_2024_bar_07_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0v7gq52",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "SIMULARE 6feb2024",
+      "nume": "Simulare 6feb2024",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/02/EN_VIII_Matematica_2024_var_simulare_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/02/EN_VIII_Matematica_2024_bar_simulare_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-00rlhiw",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Model MEN",
+      "nume": "Model MEN",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/11/EN_VIII_Matematica_2024_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/11/EN_VIII_Matematica_2024_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0bvio1y",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 1 – ICHB",
+      "nume": "Test 1 · ICHB",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/11/ichb18.10.2023.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/11/ichb18.10.2023bar.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-1lh9xuk",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 2 – CAROL I, Craiova",
+      "nume": "Test 2 · Carol I, Craiova",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/11/carol1Craiova.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-1uufpo9",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 3 – Buzau nov.2023",
+      "nume": "Test 3 · Buzau nov.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/12/simENnov2023buzau.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/12/simENnov2023buzaubarem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-01yyr36",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 4 – Ilfov nov.2023",
+      "nume": "Test 4 · Ilfov nov.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/12/EN_VIII_Matematica_2024_SIMULARE-noiembrie-ILFOV-2023.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/12/EN_VIII_Matematica_2024_bar_simulare-noiembrie-2023.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0pq30qw",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 5 – Maramures nov.2023",
+      "nume": "Test 5 · Maramures nov.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023maramures.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023maramuresBAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0848jmi",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 6 – Constanța nov.2023",
+      "nume": "Test 6 · Constanța nov.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023constanta.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023constantaBAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0b1hqec",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 7 – Olt dec.2023",
+      "nume": "Test 7 · Olt dec.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023olt.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023oltBAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-11yq30l",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 8 – Sibiu dec.2023",
+      "nume": "Test 8 · Sibiu dec.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023sibiu.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-10gy3l1",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 9 – T.Maiorescu.B dec.2023",
+      "nume": "Test 9 · T.Maiorescu.B dec.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023maiorescuB.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-179fept",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 10 – ICHB dec.2023",
+      "nume": "Test 10 · ICHB dec.2023",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023ICHB.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023ICHB.BAREM_.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-08chnts",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "Test 11 – L.Rebreanu.CJ",
+      "nume": "Test 11 · L.Rebreanu.CJ",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/01/simENnov2023rebreanuCJ.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0vyu2pl",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 12 – BUZAU martie.2024",
+      "nume": "Test 12 · Buzau martie.2024",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/04/bz1.martie.2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/04/bz1.martie.2024BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-16w4big",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 13 – BUZAU martie.2024",
+      "nume": "Test 13 · Buzau martie.2024",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/04/bz2.martie.2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/04/bz2.martie.2024BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-16u44h9",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 14 – BUZAU aprilie.2024",
+      "nume": "Test 14 · Buzau aprilie.2024",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/04/bz3.aprilie.2024.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0h3xscz",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 15 – BUZAU aprilie 2024",
+      "nume": "Test 15 · Buzau aprilie 2024",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/05/Test-de-antrenament.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0nmn2xv",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 16 – CCD CONSTANȚA*",
+      "nume": "Test 16 · CCD Constanța*",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/04/constanta1apr2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/04/constanta1apr2024BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-1rygtq0",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 17 – CCD CONSTANȚA*",
+      "nume": "Test 17 · CCD Constanța*",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/04/constanta2apr2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/04/constanta2apr2024BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-1ygm28d",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 18 – CCD CONSTANȚA*",
+      "nume": "Test 18 · CCD Constanța*",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/04/constanta3apr2024.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/04/constanta3apr2024barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2024-0d9ck3e",
+      "an": 2024,
+      "set": null,
+      "numeOriginal": "TEST 19 – TIMIȘ mai 2024",
+      "nume": "Test 19 · Timiș mai 2024",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2024/05/simulare-TIMIS-mai2024x.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2024/05/simulare-TIMIS-mai2024barem.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1pzxvcg",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "EVALUARE NAȚIONALA 2023",
+      "nume": "Evaluare Naționala 2023",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/06/ENVIII_Matematica_2023_var_01_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/06/ENVIII_Matematica_2023_bar_01_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0rt0w94",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "MODEL (12.mai.2023)",
+      "nume": "Model (12.mai.2023)",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/05/EN_VIII_Matematica_2023_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/05/EN_VIII_Matematica_2023_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-12kzgbl",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "SIMULARE – 21.martie.2023",
+      "nume": "Simulare · 21.martie.2023",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/EN_VIII_Matematica_2023_var_simulare_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/EN_VIII_Matematica_2023_bar_simulare_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1cm6xv0",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "MODEL (1.nov.2022)",
+      "nume": "Model (1.nov.2022)",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/11/EN_VIII_Matematica_2023_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/11/EN_VIII_Matematica_2023_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1563u65",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test1 (ICHB Bucuresti)",
+      "nume": "Test 1 (ICHB Bucuresti)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/01/ICHB1.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0kkqny4",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test2 (ISJ Infov)",
+      "nume": "Test 2 (ISJ Infov)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/2.ISJ_.Ilfov_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/2.ISJ_.IlfovBAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1eum3gl",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test3 (ICHB Bucuresti)",
+      "nume": "Test 3 (ICHB Bucuresti)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/1.ICHB-nov.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1tpv4k5",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 4(ISJ Maramures)",
+      "nume": "Test 4 (ISJ Maramures)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/1.ISJ_.Maramures.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1vurl92",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 5 (ISJ Ilfov)",
+      "nume": "Test 5 (ISJ Ilfov)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/2.ISJ_.Ilfov_-1.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/2.ISJ_.IlfovBAREM-1.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0nl5y09",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test6 (ISJ Constanta)",
+      "nume": "Test 6 (ISJ Constanta)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/3.isj_.Constanta.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0tw3hur",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 7 (ICHB Bucuresti)",
+      "nume": "Test 7 (ICHB Bucuresti)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/4.ICHB_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/4.ICHB_.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1mdnvxi",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 8 (ISJ Vrancea)",
+      "nume": "Test 8 (ISJ Vrancea)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/1.Isj_.Vrancea.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/1.Isj_.Vrancea-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-05yow31",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 9 (ISJ Vrancea)",
+      "nume": "Test 9 (ISJ Vrancea)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/2.Isj_.Vrancea.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/2.Isj_.Vrancea-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0dqhrfc",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 10 (ISJ Vrancea)",
+      "nume": "Test 10 (ISJ Vrancea)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/3.Isj_.Vrancea.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/3.Isj_.Vrancea-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1v7rd1z",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 11 (ISJ Vrancea)",
+      "nume": "Test 11 (ISJ Vrancea)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/4.Isj_.Vrancea.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/4.Isj_.Vrancea-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1tgh75z",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 12 (ISJ Botosani)",
+      "nume": "Test 12 (ISJ Botosani)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/5.ISJ_.Botosani.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/5.ISJ_.Botosani-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1xxu7qc",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 13 (ISJ Braila)",
+      "nume": "Test 13 (ISJ Braila)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/6.ISJ_.Braila.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/6.ISJ_.Braila-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0ok3q91",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test14 (ISJ Constanta)",
+      "nume": "Test 14 (ISJ Constanta)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/7.ISJ_.Constanta.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/7.ISJ_.Constanta-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1fr5wea",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 15 (ISJ Dambovita)",
+      "nume": "Test 15 (ISJ Dambovita)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/8.isj_.Dambovita.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/8.isj_.DambovitaBAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1yeg8mv",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 16 (ISJ Hunedoara)",
+      "nume": "Test 16 (ISJ Hunedoara)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/9.ISJ_.Hunedoara.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/9.ISJ_.Hunedoara-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0tua37h",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 17 (ISJ Iasi)",
+      "nume": "Test 17 (ISJ Iasi)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/10.ISJ_.IASI_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/10.ISJ_.IASI-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1deytg4",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 18 (ISJ Ilfov)",
+      "nume": "Test 18 (ISJ Ilfov)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/11.ISJ_.Ilfov_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/11.ISJ_.Ilfov-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1e8ik6b",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 19 (ISJ Timis)",
+      "nume": "Test 19 (ISJ Timis)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/12.ISJ_.Timis_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/12.ISJ_.Timis-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-17n7h43",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 20 (CN Moisil Bucuresti)",
+      "nume": "Test 20 (CN Moisil Bucuresti)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x1CN.Moisil.Bucuresti.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/x1CN.Moisil.Bucuresti-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-10qu3u1",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test21 (ICHB Bucuresti)",
+      "nume": "Test 21 (ICHB Bucuresti)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x2ICHB.februarie.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1rbpzhp",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 22 (ISJ Calarasi)",
+      "nume": "Test 22 (ISJ Calarasi)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x3ISJ.Calarasi.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-12rp0if",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test23 (ISJ Cluj)",
+      "nume": "Test 23 (ISJ Cluj)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x4ISJ.Cluj_.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1n6xh6s",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 24 (ISJ Constanta)",
+      "nume": "Test 24 (ISJ Constanta)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x5ISJ.Constanta.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1itv2jc",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test25 (ISJ Dolj )",
+      "nume": "Test 25 (ISJ Dolj)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x6ISJ.Dolj_.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/x6ISJ.Dolj-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1j1b6zn",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 26 (ISJ Galati)",
+      "nume": "Test 26 (ISJ Galati)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x7ISJ.Galati.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1ifqxa4",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 27 (ISJ Giurgiu)",
+      "nume": "Test 27 (ISJ Giurgiu)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x8ISJ.Giurgiu.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/x8ISJ.Giurgiu-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-0qys2eh",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 28 (ISJ Vrancea)",
+      "nume": "Test 28 (ISJ Vrancea)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/x9ISJ.Vrancea.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/x9ISJ.Vrancea-BAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2023-1e6uq7f",
+      "an": 2023,
+      "set": null,
+      "numeOriginal": "Test 29 (ISJ Bacău)",
+      "nume": "Test 29 (ISJ Bacău)",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2023/03/SUBIECT-MATEMATICA-SIMULARE-JUDETEANA-EN-2023Bacau.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2023/03/BAREM-MATEMATICA-SIMULARE-JUDETEANA-EN-2023Bacau.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-0avlkv0",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "EXAMEN EVALUARE NAȚIONALĂ (16.06.2022)",
+      "nume": "Examen Evaluare Națională (16.06.2022)",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/06/EN_VIII_Matematica_2022_Var_02_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/06/EN_VIII_Matematica_2022_Bar_02.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1knx62c",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "Test 1 – 18.apr.2022",
+      "nume": "Test 1 · 18.apr.2022",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/04/EN_VIII_Matematica_2022_Test_01.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/04/EN_VIII_Matematica_2022_Bar_01.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1oirg5q",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "Test 2 – 2.mai.2022",
+      "nume": "Test 2 · 2.mai.2022",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Test_02.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Bar_02.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1uniyl9",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "Test 3 – 9.mai.2022",
+      "nume": "Test 3 · 9.mai.2022",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Test_03.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Bar_03.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-0g2sho4",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "Test 4 – 16.mai.2022",
+      "nume": "Test 4 · 16.mai.2022",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Test_04.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Bar_04.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-0aceiaj",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "Test 5 – 23.mai.2022",
+      "nume": "Test 5 · 23.mai.2022",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Test_05.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/05/EN_VIII_Matematica_2022_Bar_05.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1y165rz",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "Test 6 – 30.mai.2022",
+      "nume": "Test 6 · 30.mai.2022",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/06/EN_VIII_Matematica_2022_Test_06.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/06/EN_VIII_Matematica_2022_Bar_06.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-0xkn5s4",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "SIMULARE 5 aprilie 2022",
+      "nume": "Simulare 5 aprilie 2022",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/04/EN_VIII_Matematica_2022_var_simulare_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/04/EN_VIII_Matematica_2022_bar_simulare_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-0h424w8",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "MODEL TEST 0 – 2022",
+      "nume": "Model test 0 · 2022",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/11/EN_VIII_matematica_2022_var_model.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/11/EN_VIII_matematica_2022_bar_model.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1hijgpu",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "SIMULARE FEBRUARIE",
+      "nume": "Simulare februarie",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/01/test1.2022.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/01/barem1.2022.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-09dpr4l",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "SIMULARE MARTIE",
+      "nume": "Simulare martie",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/01/test2.2022.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/01/barem2.2022.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1mb36pk",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "SIMULARE APRILIE",
+      "nume": "Simulare aprilie",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/01/test3.2022.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/01/barem3.2022.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-1jj3lkh",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "SIMULARE ISJ Brăila",
+      "nume": "Simulare ISJ Brăila",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/02/isj.Braila-SIMULARE-ENVIII2022-var.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2022/02/isj.Braila-SIMULARE-ENVIII2022-varBAREM.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2022-0qpt4ya",
+      "an": 2022,
+      "set": null,
+      "numeOriginal": "SIMULARE ISJ Călărași",
+      "nume": "Simulare ISJ Călărași",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2022/02/isj.Calarasi-SIMULARE-ENVIII2022-var.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021A-14urq0o",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "EXAMEN Evaluarea Națională (24.06.2021)",
+      "nume": "Examen Evaluarea Națională (24.06.2021)",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/06/examen-EN2021.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/06/baremEN2021.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.examen.2021.pdf"
+    },
+    {
+      "id": "t2021A-0wem99y",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "Model TEST 15. 2021",
+      "nume": "Model test 15 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_15.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/06/EN_VIII_2021_matematica_Bar_15.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test14.2021.pdf"
+    },
+    {
+      "id": "t2021A-0ov66bp",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "Model TEST 14. 2021",
+      "nume": "Model test 14 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_14.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/06/EN_VIII_2021_matematica_Bar_14.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test14.2021.pdf"
+    },
+    {
+      "id": "t2021A-18d4ajg",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "Model TEST 13. 2021",
+      "nume": "Model test 13 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_13.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Bar_13.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test13.2021.pdf"
+    },
+    {
+      "id": "t2021A-19q54zn",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "Model TEST 12. 2021",
+      "nume": "Model test 12 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_12.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Bar_12.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test12.2021.pdf"
+    },
+    {
+      "id": "t2021A-0pjl9zu",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "Model TEST 11. 2021",
+      "nume": "Model test 11 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_11.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Barem_11-1.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test11.2021.pdf"
+    },
+    {
+      "id": "t2021A-0tequrt",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "Model TEST 10. 2021",
+      "nume": "Model test 10 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_10.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Barem_10.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test10.2021.pdf"
+    },
+    {
+      "id": "t2021A-0376xy3",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 9. 2021",
+      "nume": "Model test 9 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_09.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_2021_matematica_Test_09_barem.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test9_.2021.pdf"
+    },
+    {
+      "id": "t2021A-0xp6knt",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 8. 2021",
+      "nume": "Model test 8 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/04/EN_VIII_Matematica_2021_Test_08.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/05/EN_VIII_Matematica_2021_barem_08.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test8_.2021.pdf"
+    },
+    {
+      "id": "t2021A-13nwl22",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 7. 2021",
+      "nume": "Model test 7 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/04/EN_VIII_2021_matematica_Test_07.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/04/EN_VIII_matematica_2021_Bar_07.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test7_.2021.pdf"
+    },
+    {
+      "id": "t2021A-0d11mpj",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 6. 2021",
+      "nume": "Model test 6 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/04/EN_VIII_matematica_2021_Test_06.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/04/EN_VIII_matematica_2021_Bar_06.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test6_.2021.pdf"
+    },
+    {
+      "id": "t2021A-0y15i1t",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "SIMULARE (30.martie.2021)",
+      "nume": "Simulare (30.martie.2021)",
+      "tip": "Simulare",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_var_simulare_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_bar_simulare_LRO.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.simulare.2021.pdf"
+    },
+    {
+      "id": "t2021A-15t448v",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 5. 2021",
+      "nume": "Model test 5 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_Test_05.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/04/EN_VIII_Matematica_2021_bar_05.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test5_.2021.pdf"
+    },
+    {
+      "id": "t2021A-1hrk73c",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 4. 2021",
+      "nume": "Model test 4 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_Test_04.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_bar_04.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test4_.2021.pdf"
+    },
+    {
+      "id": "t2021A-1fnm0kp",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 3. 2021",
+      "nume": "Model test 3 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_Test_03.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_bar_03.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test3_.2021.pdf"
+    },
+    {
+      "id": "t2021A-1pmwj22",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 2. 2021",
+      "nume": "Model test 2 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_Test_02.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_barem_02.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test2_.2021.pdf"
+    },
+    {
+      "id": "t2021A-0gs4oa0",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 1. 2021",
+      "nume": "Model test 1 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/02/EN_VIII_Matematica_2021_Test_01.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2021/03/EN_VIII_Matematica_2021_Bar_01.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.test1_.2021.pdf"
+    },
+    {
+      "id": "t2021A-0at1kjl",
+      "an": 2021,
+      "set": "A",
+      "numeOriginal": "MODEL TEST 0. 2021",
+      "nume": "Model test 0 · 2021",
+      "tip": "Model",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/12/ENVIII_2021_model_matematica_varianta.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/12/ENVIII_2021_model_matematica_barem.pdf",
+      "urlGrila": "https://www.e3.ro/wp-content/uploads/2022/01/grila.testmodel.2021.pdf"
+    },
+    {
+      "id": "t2021B-07vzf9h",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test1",
+      "nume": "Test 1",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test1c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0pmdoj2",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test2",
+      "nume": "Test 2",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test2c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0scqmif",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test3",
+      "nume": "Test 3",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test3c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0uuj4kw",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test4",
+      "nume": "Test 4",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test4c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-14pa53l",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test5",
+      "nume": "Test 5",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test5c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-019co2i",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test6",
+      "nume": "Test 6",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test6c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-1o24phf",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test7",
+      "nume": "Test 7",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test7c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-1sceqsc",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test8",
+      "nume": "Test 8",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test8c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-1hsw6dp",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test9",
+      "nume": "Test 9",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test9c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-1usqcf3",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test10",
+      "nume": "Test 10",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test10c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-00qh0ly",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test11",
+      "nume": "Test 11",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test11c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-1w403n1",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test12",
+      "nume": "Test 12",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test12c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-10nawn0",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test13",
+      "nume": "Test 13",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test13c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0qkhq23",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test14",
+      "nume": "Test 14",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test14c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0vgxhpe",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test15",
+      "nume": "Test 15",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test15c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0ncsc3d",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test16",
+      "nume": "Test 16",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test16c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0risd94",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test17",
+      "nume": "Test 17",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test17c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-1imbx1z",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test18",
+      "nume": "Test 18",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test18c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-0ocgzda",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test19",
+      "nume": "Test 19",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test19c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021B-113etzi",
+      "an": 2021,
+      "set": "B",
+      "numeOriginal": "test20",
+      "nume": "Test 20",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/01/test20c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-16l8x8b",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test21",
+      "nume": "Test 21",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test21c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0c78uy0",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test22",
+      "nume": "Test 22",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test22c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0mw9pl5",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test23",
+      "nume": "Test 23",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test23c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0ah1jfq",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test24",
+      "nume": "Test 24",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test24c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-03j0lin",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test25",
+      "nume": "Test 25",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test25c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-14rnkcs",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test26",
+      "nume": "Test 26",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test26c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-04cr2f1",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test27",
+      "nume": "Test 27",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test27c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0gpxc5m",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test28",
+      "nume": "Test 28",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test28c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-08sghf7",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test29",
+      "nume": "Test 29",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test29c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-1s593mh",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test30",
+      "nume": "Test 30",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test30c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-06fv52w",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test31",
+      "nume": "Test 31",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test31c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0ic3caz",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test32",
+      "nume": "Test 32",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test32c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-1h57f42",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test33",
+      "nume": "Test 33",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test33c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0dugggd",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test34",
+      "nume": "Test 34",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test34c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0odz0v0",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test35",
+      "nume": "Test 35",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test35c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-0btdb9b",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test36",
+      "nume": "Test 36",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test36c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-1hgaomu",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test37",
+      "nume": "Test 37",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test37c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-00quf69",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test38",
+      "nume": "Test 38",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test38c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-1px7gmo",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test39",
+      "nume": "Test 39",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test39c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2021C-04bse28",
+      "an": 2021,
+      "set": "C",
+      "numeOriginal": "test40",
+      "nume": "Test 40",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2021/05/test40c2021.pdf",
+      "urlBarem": null,
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-03yikkt",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "EXAMEN Evaluarea națională – 17.06.2020",
+      "nume": "Examen Evaluarea națională · 17.06.2020",
+      "tip": "Examen",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/06/EN_matematica_2020_var_01_LRO.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/06/EN_matematica_2020_bar_01_LRO.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-02vfg4j",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 1",
+      "nume": "Test 1",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_01.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_01.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1uvmdyy",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 2",
+      "nume": "Test 2",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_02.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_02.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1kwe33d",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 3",
+      "nume": "Test 3",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_03.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_03.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1goblbc",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 4",
+      "nume": "Test 4",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_04.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_04.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1414dof",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 5",
+      "nume": "Test 5",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_05.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_05.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1upxrrq",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 6",
+      "nume": "Test 6",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_06.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_06.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1n6jwf9",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 7",
+      "nume": "Test 7",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_07.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_07.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0vml1ok",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 8",
+      "nume": "Test 8",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_08.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_08.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0wzlw4r",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 9",
+      "nume": "Test 9",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_09.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_09.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1gvyjyx",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 10",
+      "nume": "Test 10",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_10.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Bar_10.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1k47t0q",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 11",
+      "nume": "Test 11",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_11.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_Bar_11.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-04kwh8z",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 12",
+      "nume": "Test 12",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_12.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_Bar_12.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0405f8s",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 13",
+      "nume": "Test 13",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_13.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_Bar_13.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1u07zv9",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 14",
+      "nume": "Test 14",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_14.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_Bar_14.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1qpkg92",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 15",
+      "nume": "Test 15",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/04/ENVIII_matematica_2020_Test_15.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_Bar_15.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1dzkv80",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 16",
+      "nume": "Test 16",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test-16.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_16.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-07l62op",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 17",
+      "nume": "Test 17",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_17.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_17.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0pctbds",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 18",
+      "nume": "Test 18",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_18.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_18.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-034lsbb",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 19",
+      "nume": "Test 19",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_19.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_19.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1cs84fb",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 20",
+      "nume": "Test 20",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_20.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_20.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-002u968",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 21",
+      "nume": "Test 21",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_21.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_21.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0q26565",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 22",
+      "nume": "Test 22",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_22.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_22.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-07mcaji",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 23",
+      "nume": "Test 23",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_23.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_23.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0znyoiz",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 24",
+      "nume": "Test 24",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_24.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_24.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0yb01ok",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 25",
+      "nume": "Test 25",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_25.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_25.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-15np8sx",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 26",
+      "nume": "Test 26",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_26.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_26.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-18pqluq",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 27",
+      "nume": "Test 27",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_27.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_27.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-17eaigv",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 28",
+      "nume": "Test 28",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_28.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_28.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1jcqlbc",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 29",
+      "nume": "Test 29",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_29.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_29.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1dh7w0a",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 30",
+      "nume": "Test 30",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_Test_30.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_30.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-1s712lq",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 31",
+      "nume": "Test 31",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_var_31.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_31.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0a5wson",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 32",
+      "nume": "Test 32",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_var_32.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_32.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-13etx8g",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 33",
+      "nume": "Test 33",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_var_33.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_33.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0r16i3l",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 34",
+      "nume": "Test 34",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_var_34.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_34.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0j948ky",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 35",
+      "nume": "Test 35",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_var_35.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/05/ENVIII_matematica_2020_bar_35.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0cr2rlq",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 36",
+      "nume": "Test 36",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_var_36.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_bar_36.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-0tmhgjx",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 37",
+      "nume": "Test 37",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_var_37.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_bar_37.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-08ftu8s",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 38",
+      "nume": "Test 38",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_var_38.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_bar_38.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-09suooz",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 39",
+      "nume": "Test 39",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_var_39.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_bar_39.pdf",
+      "urlGrila": null
+    },
+    {
+      "id": "t2020-13whfrr",
+      "an": 2020,
+      "set": null,
+      "numeOriginal": "TEST 40",
+      "nume": "Test 40",
+      "tip": "Test",
+      "urlSubiect": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_var_40.pdf",
+      "urlBarem": "https://www.e3.ro/wp-content/uploads/2020/06/ENVIII_matematica_2020_bar_40.pdf",
+      "urlGrila": null
+    }
+  ],
+  "subiecte": [
+    {
+      "id": "s-2026-I.1",
+      "an": 2026,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SI_.1.pdf"
+    },
+    {
+      "id": "s-2026-I.2",
+      "an": 2026,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SI_.2.pdf"
+    },
+    {
+      "id": "s-2026-I.3",
+      "an": 2026,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SI_.3.pdf"
+    },
+    {
+      "id": "s-2026-I.4",
+      "an": 2026,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SI_.4.pdf"
+    },
+    {
+      "id": "s-2026-I.5",
+      "an": 2026,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SI_.5.pdf"
+    },
+    {
+      "id": "s-2026-I.6",
+      "an": 2026,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SI_.6.pdf"
+    },
+    {
+      "id": "s-2026-II.1",
+      "an": 2026,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SII_.1.pdf"
+    },
+    {
+      "id": "s-2026-II.2",
+      "an": 2026,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SII_.2.pdf"
+    },
+    {
+      "id": "s-2026-II.3",
+      "an": 2026,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SII_.3.pdf"
+    },
+    {
+      "id": "s-2026-II.4",
+      "an": 2026,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SII_.4.pdf"
+    },
+    {
+      "id": "s-2026-II.5",
+      "an": 2026,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SII_.5.pdf"
+    },
+    {
+      "id": "s-2026-II.6",
+      "an": 2026,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SII_.6.pdf"
+    },
+    {
+      "id": "s-2026-III.1",
+      "an": 2026,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SIII_.1.pdf"
+    },
+    {
+      "id": "s-2026-III.2",
+      "an": 2026,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SIII_.2.pdf"
+    },
+    {
+      "id": "s-2026-III.3",
+      "an": 2026,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SIII_.3.pdf"
+    },
+    {
+      "id": "s-2026-III.4",
+      "an": 2026,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SIII_.4.pdf"
+    },
+    {
+      "id": "s-2026-III.5",
+      "an": 2026,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SIII_.5.pdf"
+    },
+    {
+      "id": "s-2026-III.6",
+      "an": 2026,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2026/08/EN2026.SIII_.6.pdf"
+    },
+    {
+      "id": "s-2025-I.1",
+      "an": 2025,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SI_.1.pdf"
+    },
+    {
+      "id": "s-2025-I.2",
+      "an": 2025,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SI_.2.pdf"
+    },
+    {
+      "id": "s-2025-I.3",
+      "an": 2025,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SI_.3.pdf"
+    },
+    {
+      "id": "s-2025-I.4",
+      "an": 2025,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SI_.4.pdf"
+    },
+    {
+      "id": "s-2025-I.5",
+      "an": 2025,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SI_.5.pdf"
+    },
+    {
+      "id": "s-2025-I.6",
+      "an": 2025,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SI_.6.pdf"
+    },
+    {
+      "id": "s-2025-II.1",
+      "an": 2025,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SII_.1.pdf"
+    },
+    {
+      "id": "s-2025-II.2",
+      "an": 2025,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SII_.2.pdf"
+    },
+    {
+      "id": "s-2025-II.3",
+      "an": 2025,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SII_.3.pdf"
+    },
+    {
+      "id": "s-2025-II.4",
+      "an": 2025,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SII_.4.pdf"
+    },
+    {
+      "id": "s-2025-II.5",
+      "an": 2025,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SII_.5.pdf"
+    },
+    {
+      "id": "s-2025-II.6",
+      "an": 2025,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SII_.6.pdf"
+    },
+    {
+      "id": "s-2025-III.1",
+      "an": 2025,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SIII_.1.pdf"
+    },
+    {
+      "id": "s-2025-III.2",
+      "an": 2025,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SIII_.2.pdf"
+    },
+    {
+      "id": "s-2025-III.3",
+      "an": 2025,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SIII_.3.pdf"
+    },
+    {
+      "id": "s-2025-III.4",
+      "an": 2025,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SIII_.4.pdf"
+    },
+    {
+      "id": "s-2025-III.5",
+      "an": 2025,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SIII_.5.pdf"
+    },
+    {
+      "id": "s-2025-III.6",
+      "an": 2025,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2025/09/E.N.2025.SIII_.6.pdf"
+    },
+    {
+      "id": "s-2024-I.1",
+      "an": 2024,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.1.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-I.2",
+      "an": 2024,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.2.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-I.3",
+      "an": 2024,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.3.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-I.4",
+      "an": 2024,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.4.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-I.5",
+      "an": 2024,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.5.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-I.6",
+      "an": 2024,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.6.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-II.1",
+      "an": 2024,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.1.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-II.2",
+      "an": 2024,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.2.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-II.3",
+      "an": 2024,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.3.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-II.4",
+      "an": 2024,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.4.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-II.5",
+      "an": 2024,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.5.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-II.6",
+      "an": 2024,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.6.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-III.1",
+      "an": 2024,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.1.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-III.2",
+      "an": 2024,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.2.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-III.3",
+      "an": 2024,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.3.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-III.4",
+      "an": 2024,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.4.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-III.5",
+      "an": 2024,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.5.EN2024.pdf"
+    },
+    {
+      "id": "s-2024-III.6",
+      "an": 2024,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.6.EN2024.pdf"
+    },
+    {
+      "id": "s-2023-I.1",
+      "an": 2023,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 1,
+      "tema": "Ordinea operatiilor",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.I.1.pdf"
+    },
+    {
+      "id": "s-2023-I.2",
+      "an": 2023,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 2,
+      "tema": "Rapoarte si procente",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.I.2.pdf"
+    },
+    {
+      "id": "s-2023-I.3",
+      "an": 2023,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 3,
+      "tema": "Intervale, multimi",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.I.3.pdf"
+    },
+    {
+      "id": "s-2023-I.4",
+      "an": 2023,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 4,
+      "tema": "Fracții",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.I.4.pdf"
+    },
+    {
+      "id": "s-2023-I.5",
+      "an": 2023,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 5,
+      "tema": "Radicali",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.I.5.pdf"
+    },
+    {
+      "id": "s-2023-I.6",
+      "an": 2023,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 6,
+      "tema": "Adevar/fals",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.I.6.pdf"
+    },
+    {
+      "id": "s-2023-II.1",
+      "an": 2023,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 1,
+      "tema": "Segmente",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.II_.1.pdf"
+    },
+    {
+      "id": "s-2023-II.2",
+      "an": 2023,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 2,
+      "tema": "Unghiuri",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.II_.2.pdf"
+    },
+    {
+      "id": "s-2023-II.3",
+      "an": 2023,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 3,
+      "tema": "Arii, rezolvare triunghi",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.II_.3.pdf"
+    },
+    {
+      "id": "s-2023-II.4",
+      "an": 2023,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 4,
+      "tema": "Asemanare, poligoane",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.II_.4.pdf"
+    },
+    {
+      "id": "s-2023-II.5",
+      "an": 2023,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 5,
+      "tema": "Cerc",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.II_.5.pdf"
+    },
+    {
+      "id": "s-2023-II.6",
+      "an": 2023,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 6,
+      "tema": "Corpuri geometrice",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.II_.6.pdf"
+    },
+    {
+      "id": "s-2023-III.1",
+      "an": 2023,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 1,
+      "tema": "Probleme aplicate practic",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.III_.1.pdf"
+    },
+    {
+      "id": "s-2023-III.2",
+      "an": 2023,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 2,
+      "tema": "Expresii algebrice",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.III_.2.pdf"
+    },
+    {
+      "id": "s-2023-III.3",
+      "an": 2023,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 3,
+      "tema": "Functii",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.III_.3.pdf"
+    },
+    {
+      "id": "s-2023-III.4",
+      "an": 2023,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 4,
+      "tema": "Geometrie plana *",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.III_.4.pdf"
+    },
+    {
+      "id": "s-2023-III.5",
+      "an": 2023,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 5,
+      "tema": "Geometrie plana **",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.III_.5.pdf"
+    },
+    {
+      "id": "s-2023-III.6",
+      "an": 2023,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 6,
+      "tema": "Geometrie în spațiu",
+      "url": "https://www.e3.ro/wp-content/uploads/2023/03/subiecte2023.III_.6.pdf"
+    },
+    {
+      "id": "s-2022-I.1",
+      "an": 2022,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.1.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-I.2",
+      "an": 2022,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.2.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-I.3",
+      "an": 2022,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.3.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-I.4",
+      "an": 2022,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.4.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-I.5",
+      "an": 2022,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.5.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-I.6",
+      "an": 2022,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S1.6.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-II.1",
+      "an": 2022,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.1.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-II.2",
+      "an": 2022,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.2.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-II.3",
+      "an": 2022,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.3.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-II.4",
+      "an": 2022,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.4.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-II.5",
+      "an": 2022,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.5.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-II.6",
+      "an": 2022,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S2.6.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-III.1",
+      "an": 2022,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 1,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.1.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-III.2",
+      "an": 2022,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 2,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.2.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-III.3",
+      "an": 2022,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 3,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.3.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-III.4",
+      "an": 2022,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 4,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.4.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-III.5",
+      "an": 2022,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 5,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.5.EN2022.pdf"
+    },
+    {
+      "id": "s-2022-III.6",
+      "an": 2022,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 6,
+      "url": "https://www.e3.ro/wp-content/uploads/2024/01/S3.6.EN2022.pdf"
+    },
+    {
+      "id": "s-2021A-I.1",
+      "an": 2021,
+      "set": "A",
+      "subiect": "I",
+      "exercitiu": 1,
+      "clasa": "V",
+      "tema": "operații, divizori",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT1.1.pdf"
+    },
+    {
+      "id": "s-2021A-I.2",
+      "an": 2021,
+      "set": "A",
+      "subiect": "I",
+      "exercitiu": 2,
+      "clasa": "VI",
+      "tema": "fracții, rapoarte, proporții",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT1.2.pdf"
+    },
+    {
+      "id": "s-2021A-I.3",
+      "an": 2021,
+      "set": "A",
+      "subiect": "I",
+      "exercitiu": 3,
+      "clasa": "VI",
+      "tema": "numere întregi",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT1.3.pdf"
+    },
+    {
+      "id": "s-2021A-I.4",
+      "an": 2021,
+      "set": "A",
+      "subiect": "I",
+      "exercitiu": 4,
+      "clasa": "VI",
+      "tema": "fracții zecimale, ordinare",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT1.4.pdf"
+    },
+    {
+      "id": "s-2021A-I.5",
+      "an": 2021,
+      "set": "A",
+      "subiect": "I",
+      "exercitiu": 5,
+      "clasa": "VII",
+      "tema": "radicali",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT1.5.pdf"
+    },
+    {
+      "id": "s-2021A-I.6",
+      "an": 2021,
+      "set": "A",
+      "subiect": "I",
+      "exercitiu": 6,
+      "clasa": "VII",
+      "tema": "organizarea datelor",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT1.6.pdf"
+    },
+    {
+      "id": "s-2021A-II.1",
+      "an": 2021,
+      "set": "A",
+      "subiect": "II",
+      "exercitiu": 1,
+      "clasa": "V",
+      "tema": "segmente",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT2.1.pdf"
+    },
+    {
+      "id": "s-2021A-II.2",
+      "an": 2021,
+      "set": "A",
+      "subiect": "II",
+      "exercitiu": 2,
+      "clasa": "V",
+      "tema": "unghiuri",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT2.2.pdf"
+    },
+    {
+      "id": "s-2021A-II.3",
+      "an": 2021,
+      "set": "A",
+      "subiect": "II",
+      "exercitiu": 3,
+      "clasa": "VI",
+      "tema": "triunghiul",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT2.3.pdf"
+    },
+    {
+      "id": "s-2021A-II.4",
+      "an": 2021,
+      "set": "A",
+      "subiect": "II",
+      "exercitiu": 4,
+      "clasa": "VII",
+      "tema": "geometrie plana *",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT2.4.pdf"
+    },
+    {
+      "id": "s-2021A-II.5",
+      "an": 2021,
+      "set": "A",
+      "subiect": "II",
+      "exercitiu": 5,
+      "clasa": "VII",
+      "tema": "cercul",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT2.5.pdf"
+    },
+    {
+      "id": "s-2021A-II.6",
+      "an": 2021,
+      "set": "A",
+      "subiect": "II",
+      "exercitiu": 6,
+      "clasa": "VIII",
+      "tema": "corpuri geometrice",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT2.6.pdf"
+    },
+    {
+      "id": "s-2021A-III.1",
+      "an": 2021,
+      "set": "A",
+      "subiect": "III",
+      "exercitiu": 1,
+      "clasa": "V",
+      "tema": "metode aritmetice",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT3.1.pdf"
+    },
+    {
+      "id": "s-2021A-III.2",
+      "an": 2021,
+      "set": "A",
+      "subiect": "III",
+      "exercitiu": 2,
+      "clasa": "VIII",
+      "tema": "expresii algebrice",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT3.2.pdf"
+    },
+    {
+      "id": "s-2021A-III.3",
+      "an": 2021,
+      "set": "A",
+      "subiect": "III",
+      "exercitiu": 3,
+      "clasa": "VIII",
+      "tema": "funcții",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT3.3.pdf"
+    },
+    {
+      "id": "s-2021A-III.4",
+      "an": 2021,
+      "set": "A",
+      "subiect": "III",
+      "exercitiu": 4,
+      "clasa": "VII",
+      "tema": "geometrie plana **",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT3.4.pdf"
+    },
+    {
+      "id": "s-2021A-III.5",
+      "an": 2021,
+      "set": "A",
+      "subiect": "III",
+      "exercitiu": 5,
+      "clasa": "VII",
+      "tema": "geometrie plana ***",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT3.5.pdf"
+    },
+    {
+      "id": "s-2021A-III.6",
+      "an": 2021,
+      "set": "A",
+      "subiect": "III",
+      "exercitiu": 6,
+      "clasa": "VIII",
+      "tema": "geometrie in spațiu",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/08/EN2021SUBIECT3.6.pdf"
+    },
+    {
+      "id": "s-2021B-I.1",
+      "an": 2021,
+      "set": "B",
+      "subiect": "I",
+      "exercitiu": 1,
+      "tema": "divizori",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-I.1.C2021.pdf"
+    },
+    {
+      "id": "s-2021B-I.2",
+      "an": 2021,
+      "set": "B",
+      "subiect": "I",
+      "exercitiu": 2,
+      "tema": "rapoarte si procente",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-I.2.C2021.pdf"
+    },
+    {
+      "id": "s-2021B-I.3",
+      "an": 2021,
+      "set": "B",
+      "subiect": "I",
+      "exercitiu": 3,
+      "tema": "organizarea datelor",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-I.3.C2021.pdf"
+    },
+    {
+      "id": "s-2021B-I.4",
+      "an": 2021,
+      "set": "B",
+      "subiect": "I",
+      "exercitiu": 4,
+      "tema": "fractii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-I.4.C2021.pdf"
+    },
+    {
+      "id": "s-2021B-I.5",
+      "an": 2021,
+      "set": "B",
+      "subiect": "I",
+      "exercitiu": 5,
+      "tema": "radical",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-I.5.C2021.pdf"
+    },
+    {
+      "id": "s-2021B-II.1",
+      "an": 2021,
+      "set": "B",
+      "subiect": "II",
+      "exercitiu": 1,
+      "tema": "geometrie plan",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.1.pdf"
+    },
+    {
+      "id": "s-2021B-II.2",
+      "an": 2021,
+      "set": "B",
+      "subiect": "II",
+      "exercitiu": 2,
+      "tema": "unghiuri",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.2.pdf"
+    },
+    {
+      "id": "s-2021B-II.3",
+      "an": 2021,
+      "set": "B",
+      "subiect": "II",
+      "exercitiu": 3,
+      "tema": "triunghi, asemanare",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.3.pdf"
+    },
+    {
+      "id": "s-2021B-II.4",
+      "an": 2021,
+      "set": "B",
+      "subiect": "II",
+      "exercitiu": 4,
+      "tema": "arii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.4.pdf"
+    },
+    {
+      "id": "s-2021B-II.5",
+      "an": 2021,
+      "set": "B",
+      "subiect": "II",
+      "exercitiu": 5,
+      "tema": "cerc",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.5.pdf"
+    },
+    {
+      "id": "s-2021B-II.6",
+      "an": 2021,
+      "set": "B",
+      "subiect": "II",
+      "exercitiu": 6,
+      "tema": "corpuri geometrice",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.6.pdf"
+    },
+    {
+      "id": "s-2021B-III.1",
+      "an": 2021,
+      "set": "B",
+      "subiect": "III",
+      "exercitiu": 1,
+      "tema": "metode aritmetice",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-III.1.pdf"
+    },
+    {
+      "id": "s-2021B-III.2",
+      "an": 2021,
+      "set": "B",
+      "subiect": "III",
+      "exercitiu": 2,
+      "tema": "expresii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-III.2.pdf"
+    },
+    {
+      "id": "s-2021B-III.3",
+      "an": 2021,
+      "set": "B",
+      "subiect": "III",
+      "exercitiu": 3,
+      "tema": "grafic functii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-III.3.pdf"
+    },
+    {
+      "id": "s-2021B-III.4",
+      "an": 2021,
+      "set": "B",
+      "subiect": "III",
+      "exercitiu": 4,
+      "tema": "geometrie plana. arii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-II.4.pdf"
+    },
+    {
+      "id": "s-2021B-III.5",
+      "an": 2021,
+      "set": "B",
+      "subiect": "III",
+      "exercitiu": 5,
+      "tema": "geometrie plana **",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-III.5.pdf"
+    },
+    {
+      "id": "s-2021B-III.6",
+      "an": 2021,
+      "set": "B",
+      "subiect": "III",
+      "exercitiu": 6,
+      "tema": "geometrie spatiu **",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/01/SUBIECT-III.6.pdf"
+    },
+    {
+      "id": "s-2021C-I.1",
+      "an": 2021,
+      "set": "C",
+      "subiect": "I",
+      "exercitiu": 1,
+      "tema": "divizori",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-I.1.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-I.2",
+      "an": 2021,
+      "set": "C",
+      "subiect": "I",
+      "exercitiu": 2,
+      "tema": "rapoarte si procente",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-I.2.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-I.3",
+      "an": 2021,
+      "set": "C",
+      "subiect": "I",
+      "exercitiu": 3,
+      "tema": "org datelor",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-I.3.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-I.4",
+      "an": 2021,
+      "set": "C",
+      "subiect": "I",
+      "exercitiu": 4,
+      "tema": "fractii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-I.4.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-I.5",
+      "an": 2021,
+      "set": "C",
+      "subiect": "I",
+      "exercitiu": 5,
+      "tema": "radical",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-I.5.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-I.6",
+      "an": 2021,
+      "set": "C",
+      "subiect": "I",
+      "exercitiu": 6,
+      "tema": "adevarat sau fals",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-I.6.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-II.1",
+      "an": 2021,
+      "set": "C",
+      "subiect": "II",
+      "exercitiu": 1,
+      "tema": "segmente",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-II.1.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-II.2",
+      "an": 2021,
+      "set": "C",
+      "subiect": "II",
+      "exercitiu": 2,
+      "tema": "unghiuri",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-II.2.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-II.3",
+      "an": 2021,
+      "set": "C",
+      "subiect": "II",
+      "exercitiu": 3,
+      "tema": "geometrie plana",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-II.3.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-II.4",
+      "an": 2021,
+      "set": "C",
+      "subiect": "II",
+      "exercitiu": 4,
+      "tema": "arii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-II.4.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-II.5",
+      "an": 2021,
+      "set": "C",
+      "subiect": "II",
+      "exercitiu": 5,
+      "tema": "cerc",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-II.5.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-II.6",
+      "an": 2021,
+      "set": "C",
+      "subiect": "II",
+      "exercitiu": 6,
+      "tema": "corpuri, volume",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-II.6.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-III.1",
+      "an": 2021,
+      "set": "C",
+      "subiect": "III",
+      "exercitiu": 1,
+      "tema": "met aritmetice",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-III.1.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-III.2",
+      "an": 2021,
+      "set": "C",
+      "subiect": "III",
+      "exercitiu": 2,
+      "tema": "E(x)",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-III.2.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-III.3",
+      "an": 2021,
+      "set": "C",
+      "subiect": "III",
+      "exercitiu": 3,
+      "tema": "grafice functii",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-III.3.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-III.4",
+      "an": 2021,
+      "set": "C",
+      "subiect": "III",
+      "exercitiu": 4,
+      "tema": "Geometrie plan **",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-III.4.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-III.5",
+      "an": 2021,
+      "set": "C",
+      "subiect": "III",
+      "exercitiu": 5,
+      "tema": "geometrie plan ***",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-III.5.set2_.pdf"
+    },
+    {
+      "id": "s-2021C-III.6",
+      "an": 2021,
+      "set": "C",
+      "subiect": "III",
+      "exercitiu": 6,
+      "tema": "geometrie 3D",
+      "url": "https://www.e3.ro/wp-content/uploads/2021/05/SUBIECT-III.6.set2_.pdf"
+    },
+    {
+      "id": "s-2020-I.1",
+      "an": 2020,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 1,
+      "clasa": "V",
+      "tema": "operații aritmetice",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT1.1.pdf"
+    },
+    {
+      "id": "s-2020-I.2",
+      "an": 2020,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 2,
+      "clasa": "VI",
+      "tema": "rapoarte, proporții",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT1.2.pdf"
+    },
+    {
+      "id": "s-2020-I.3",
+      "an": 2020,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 3,
+      "clasa": "VIII",
+      "tema": "mulțimi, intervale",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT1.3.pdf"
+    },
+    {
+      "id": "s-2020-I.4",
+      "an": 2020,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 4,
+      "clasa": "VII",
+      "tema": "geometrie plana",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT1.4.pdf"
+    },
+    {
+      "id": "s-2020-I.5",
+      "an": 2020,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 5,
+      "clasa": "VIII",
+      "tema": "geometrie in spatiu",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT1.5.pdf"
+    },
+    {
+      "id": "s-2020-I.6",
+      "an": 2020,
+      "set": null,
+      "subiect": "I",
+      "exercitiu": 6,
+      "clasa": "VI",
+      "tema": "org. datelor, diagrame",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT1.6.pdf"
+    },
+    {
+      "id": "s-2020-II.1",
+      "an": 2020,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 1,
+      "clasa": "VIII",
+      "tema": "deseneaza un corp geom.",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT2.1.pdf"
+    },
+    {
+      "id": "s-2020-II.2",
+      "an": 2020,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 2,
+      "clasa": "V",
+      "tema": "operatii, divizor, T.Î.Rest",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT2.2.pdf"
+    },
+    {
+      "id": "s-2020-II.3",
+      "an": 2020,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 3,
+      "clasa": "V",
+      "tema": "metode aritmetice",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT2.3.pdf"
+    },
+    {
+      "id": "s-2020-II.4",
+      "an": 2020,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 4,
+      "clasa": "VII",
+      "tema": "funcții, expresii, radicali",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT2.4.pdf"
+    },
+    {
+      "id": "s-2020-II.5",
+      "an": 2020,
+      "set": null,
+      "subiect": "II",
+      "exercitiu": 5,
+      "clasa": "VIII",
+      "tema": "expresii algebrice",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT2.5.pdf"
+    },
+    {
+      "id": "s-2020-III.1",
+      "an": 2020,
+      "set": null,
+      "subiect": "III",
+      "exercitiu": 1,
+      "clasa": "VII",
+      "tema": "geometrie plan",
+      "url": "https://www.e3.ro/wp-content/uploads/2020/07/SUBIECT3.1.pdf"
+    }
+  ]
+}
