@@ -19,10 +19,12 @@ const router = useRouter();
 
 // ---------- filtrele, citite din adresă ----------
 const q = computed(() => (typeof route.query.q === 'string' ? route.query.q.trim() : ''));
+// an = null înseamnă „Toți anii” (în adresă: an=toti; la căutare, și fără an)
 const an = computed(() => {
+  if (route.query.an === 'toti') return null;
   const n = Number(route.query.an);
   if (ANI.includes(n)) return n;
-  return q.value ? null : anImplicitSubiecte; // la căutare, fără an = toți anii
+  return q.value ? null : anImplicitSubiecte;
 });
 const s = computed(() => (SUBIECTE.includes(route.query.s) ? route.query.s : null));
 const ex = computed(() => {
@@ -38,10 +40,7 @@ function seteaza(schimbari) {
   router.push({ path: '/subiecte', query });
 }
 
-const optAni = computed(() => [
-  ...(q.value ? [{ value: null, label: 'Toți anii' }] : []),
-  ...ANI.map((a) => ({ value: a, label: String(a) })),
-]);
+const optAni = [{ value: 'toti', label: 'Toți anii' }, ...ANI.map((a) => ({ value: a, label: String(a) }))];
 const optSubiect = [{ value: null, label: 'Toate' }, ...SUBIECTE.map((x) => ({ value: x, label: x }))];
 const optEx = [{ value: null, label: 'Toate' }, ...EXERCITII.map((x) => ({ value: x, label: String(x) }))];
 const optSet = [{ value: null, label: 'Toate' }, ...SETURI.map((x) => ({ value: x, label: x }))];
@@ -65,14 +64,16 @@ const grupa = computed(() => store.grupe.find((g) => g.id === store.grupaSelecta
 const facut = (x) => (grupa.value ? marcaj(grupa.value.id, 'subiect', x.id) : null);
 const arataSet = computed(() => rezultate.value.some((x) => x.set));
 
-// tabele: pe subiect; la căutare, pe an (și set)
+// tabele: pe subiect; la căutare, pe an (și set). La „Toți anii” apare coloana „An”.
+const peAn = computed(() => !!q.value);
+const arataAn = computed(() => an.value === null && !q.value);
 const sectiuni = computed(() => {
   const grupe = new Map();
   for (const x of rezultate.value) {
-    const cheie = q.value ? `${x.an}${x.set || ''}` : x.subiect;
+    const cheie = peAn.value ? `${x.an}${x.set || ''}` : x.subiect;
     if (!grupe.has(cheie)) {
       let titlu;
-      if (q.value) titlu = x.set ? `${x.an} · Set ${x.set}` : String(x.an);
+      if (peAn.value) titlu = x.set ? `${x.an} · Set ${x.set}` : String(x.an);
       else titlu = ex.value ? `Subiectul ${x.subiect} · Exercițiul ${ex.value}` : `Subiectul ${x.subiect}`;
       grupe.set(cheie, { cheie, titlu, randuri: [] });
     }
@@ -122,11 +123,11 @@ const randDeschis = ref(null);
     <section class="filter-bar" aria-label="Filtre">
       <div v-if="q" class="cautare">
         <span class="caption">Căutare</span>
-        <button type="button" class="chip chip--selected" @click="seteaza({ q: null, an: an ?? anImplicitSubiecte })">
+        <button type="button" class="chip chip--selected" @click="seteaza({ q: null, an: route.query.an || anImplicitSubiecte })">
           „{{ q }}”<Icon name="x" :size="16" /><span class="sr-only">Șterge căutarea</span>
         </button>
       </div>
-      <FilterChips label="1 · An" :options="optAni" :model-value="an" @update:model-value="(v) => seteaza({ an: v })" />
+      <FilterChips label="1 · An" :options="optAni" :model-value="an ?? 'toti'" @update:model-value="(v) => seteaza({ an: v })" />
       <FilterChips
         v-if="an === 2021"
         label="Set"
@@ -176,6 +177,7 @@ const randDeschis = ref(null);
       </div>
       <div class="table">
         <div class="thead">
+          <span v-if="arataAn" class="cell caption col-an">An</span>
           <span class="cell caption col-ex">Ex.</span>
           <span v-if="arataSet" class="cell caption col-set">Set</span>
           <span class="cell cell--grow caption">Temă</span>
@@ -183,6 +185,7 @@ const randDeschis = ref(null);
           <span class="cell cell--end caption col-act">Acțiuni</span>
         </div>
         <div v-for="x in sec.randuri" :key="x.id" class="row" :class="{ 'row--highlight': randDeschis === x.id }">
+          <span v-if="arataAn" class="cell ex col-an">{{ x.an }}</span>
           <span class="cell ex col-ex">{{ eticheta(x) }}</span>
           <span v-if="arataSet" class="cell col-set">
             <span v-if="x.set"><span class="strong">Set {{ x.set }}</span><span v-if="DESCRIERE_SET[x.set]" class="muted"> · {{ DESCRIERE_SET[x.set] }}</span></span>
@@ -209,6 +212,9 @@ const randDeschis = ref(null);
 </template>
 
 <style scoped>
+.col-an {
+  width: 72px;
+}
 .col-ex {
   width: 80px;
 }

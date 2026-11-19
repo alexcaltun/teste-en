@@ -24,7 +24,9 @@ const route = useRoute();
 const router = useRouter();
 
 const q = computed(() => (typeof route.query.q === 'string' ? route.query.q.trim() : ''));
+// an = null înseamnă „Toți anii” (în adresă: an=toti; la căutare, și fără an)
 const an = computed(() => {
+  if (route.query.an === 'toti') return null;
   const n = Number(route.query.an);
   if (ANI.includes(n)) return n;
   return q.value ? null : anImplicitTeste;
@@ -37,10 +39,7 @@ function seteaza(schimbari) {
   router.push({ path: '/teste', query });
 }
 
-const optAni = computed(() => [
-  ...(q.value ? [{ value: null, label: 'Toți anii' }] : []),
-  ...ANI.map((a) => ({ value: a, label: String(a) })),
-]);
+const optAni = [{ value: 'toti', label: 'Toți anii' }, ...ANI.map((a) => ({ value: a, label: String(a) }))];
 
 const rezultate = computed(() =>
   teste.filter(
@@ -87,11 +86,11 @@ const randDeschis = ref(null);
     <section class="filter-bar" aria-label="Filtre">
       <div v-if="q" class="cautare">
         <span class="caption">Căutare</span>
-        <button type="button" class="chip chip--selected" @click="seteaza({ q: null, an: an ?? anImplicitTeste })">
+        <button type="button" class="chip chip--selected" @click="seteaza({ q: null, an: route.query.an || anImplicitTeste })">
           „{{ q }}”<Icon name="x" :size="16" /><span class="sr-only">Șterge căutarea</span>
         </button>
       </div>
-      <FilterChips label="1 · An" :options="optAni" :model-value="an" @update:model-value="(v) => seteaza({ an: v })" />
+      <FilterChips label="1 · An" :options="optAni" :model-value="an ?? 'toti'" @update:model-value="(v) => seteaza({ an: v })" />
       <div class="filter-split">
         <FilterChips label="2 · Tip" :options="TIPURI" :model-value="tip" @update:model-value="(v) => seteaza({ tip: v })" />
         <GroupSelect />
