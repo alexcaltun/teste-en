@@ -1,0 +1,675 @@
+/*
+ * Tema „elev”: aspectul prietenos pentru copii.
+ * Se aplică peste tokens.css și base.css (tema „profesor”, aspectul inițial) când
+ * <html data-tema="elev"> — adică pentru elev și pe ecranul de alegere a rolului.
+ */
+/* ---------- tokenii temei „elev” (DESIGN.md, varianta pentru copii) ---------- */
+:root[data-tema="elev"] {
+  /* culori */
+  --bg: #fff8ee;
+  --surface: #ffffff;
+  --surface-sunk: #f4f0fa;
+  --border: #e9e2f3;
+  --border-soft: #f1ecf8;
+  --border-btn: #ddd5ea;
+  --border-btn-edge: #c9beda;
+  --border-control: #8e84a3;
+  --text: #2b2140;
+  --text-secondary: #544a6b;
+  --text-muted: #6b6280;
+  --accent: #7c3aed;
+  --accent-edge: #5b21b6;
+  --accent-hover: #6d28d9;
+  --accent-text: #6d28d9;
+  --accent-subtle: #f3eeff;
+  --accent-tint: #ede9fe;
+  --accent-line: #c4b5fd;
+  --accent-line-strong: #a78bfa;
+  --yellow: #facc15;
+  --yellow-edge: #ca8a04;
+  --success: #166534;
+  --success-fill: #15803d;
+  --success-bg: #dcfce7;
+  --success-row: #f6fdf8;
+  --success-line: #86efac;
+  --error: #b91c1c;
+  --error-edge: #7f1d1d;
+  --error-bg: #fef2f2;
+  --topic-bg: #fef3c7;
+  --topic-text: #854d0e;
+  --pink-bg: #fce7f3;
+  --pink-text: #9d174d;
+  --sky-bg: #e0f2fe;
+  --sky-text: #075985;
+  --teal-bg: #ccfbf1;
+  --teal-text: #115e59;
+  --track: #ece7f5;
+  --on-color: #ffffff;
+  --overlay: rgba(43, 33, 64, 0.45);
+
+  /* culori de grupă (text alb pe ele: minimum 4,5:1) */
+  --group-teal: #0f766e;
+  --group-indigo: #4338ca;
+  --group-amber: #b45309;
+  --group-rose: #be123c;
+
+  /* tipografie */
+  --font: 'Nunito', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  --fs-display: 38px;
+  --lh-display: 46px;
+  --fs-h2: 24px;
+  --lh-h2: 32px;
+  --fs-h3: 18px;
+  --lh-h3: 26px;
+  --fs-body: 16px;
+  --lh-body: 24px;
+  --fs-sm: 15px;
+  --lh-sm: 20px;
+  --fs-caption: 12px;
+  --lh-caption: 16px;
+
+  /* spațiere (grilă de 8) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 40px;
+  --s-8: 48px;
+  --s-9: 64px;
+
+  /* forme: colțuri rotunde, margine de jos mai groasă („3D”) */
+  --r-btn: 14px;
+  --r-card: 24px;
+  --r-pill: 999px;
+  --r-nav: 16px;
+  --edge: 4px;
+  --edge-card: 5px;
+  --shadow-card: none;
+  --shadow-pop: 0 12px 28px rgba(43, 33, 64, 0.16);
+
+  /* înălțimi */
+  --h-topbar: 72px;
+  --h-nav: 52px;
+  --h-row: 68px;
+  --h-btn: 44px;
+  --h-chip: 44px;
+  --h-thead: 44px;
+  --h-toast: 56px;
+  --h-badge: 28px;
+  --w-sidebar: 272px;
+  --w-content: 1040px;
+  --w-search: 400px;
+  --w-card: 330px;
+}
+
+/* ---------- peste base.css ---------- */
+:root[data-tema="elev"] body {
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+:root[data-tema="elev"] :focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+:root[data-tema="elev"] h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+:root[data-tema="elev"] h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: 600;
+}
+:root[data-tema="elev"] .subtitle {
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .caption {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+:root[data-tema="elev"] .filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  padding: var(--s-5);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: var(--r-card);
+}
+:root[data-tema="elev"] .filter-split {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--s-4) var(--s-6);
+}
+:root[data-tema="elev"] .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: var(--h-chip);
+  padding: 0 14px;
+  background: var(--surface);
+  border: 2px solid var(--border-btn);
+  border-bottom-width: var(--edge);
+  border-radius: var(--r-btn);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 800;
+  color: var(--text);
+  white-space: nowrap;
+  position: relative;
+}
+:root[data-tema="elev"] .chip:active,
+:root[data-tema="elev"] .btn:active,
+:root[data-tema="elev"] .tick:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+:root[data-tema="elev"] .chip--selected,
+:root[data-tema="elev"] .chip--selected:hover {
+  padding: 0 14px 0 10px;
+  background: var(--accent-subtle);
+  border-color: var(--accent-line-strong);
+  border-bottom-color: var(--accent);
+  color: var(--accent-edge);
+}
+:root[data-tema="elev"] .chip .icon {
+  stroke-width: 3;
+}
+:root[data-tema="elev"] .summary strong {
+  font-weight: 800;
+  color: var(--text);
+}
+:root[data-tema="elev"] .section-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+:root[data-tema="elev"] .section-meta {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 700;
+  color: var(--text-muted);
+}
+:root[data-tema="elev"] .table {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: var(--r-card);
+}
+:root[data-tema="elev"] .thead {
+  display: flex;
+  align-items: center;
+  height: var(--h-thead);
+  padding: 0 var(--s-5);
+  border-bottom: 2px solid var(--border-soft);
+}
+:root[data-tema="elev"] .row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: var(--h-row);
+  padding: 0 var(--s-5);
+  border-bottom: 2px solid var(--border-soft);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+}
+:root[data-tema="elev"] .row:last-child {
+  border-bottom: none;
+}
+:root[data-tema="elev"] .row--done {
+  background: var(--success-row);
+}
+:root[data-tema="elev"] .table-foot {
+  display: flex;
+  justify-content: center;
+  padding: 14px var(--s-5);
+  border-top: 2px solid var(--border-soft);
+}
+:root[data-tema="elev"] .ex {
+  font-weight: 800;
+}
+:root[data-tema="elev"] .strong {
+  font-weight: 800;
+}
+:root[data-tema="elev"] .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  height: var(--h-badge);
+  padding: 0 10px;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+  line-height: var(--lh-caption);
+  font-weight: 800;
+  white-space: nowrap;
+}
+:root[data-tema="elev"] .badge--done .icon {
+  stroke-width: 3;
+}
+:root[data-tema="elev"] .badge--topic {
+  background: var(--topic-bg);
+  color: var(--topic-text);
+}
+:root[data-tema="elev"] .badge--accent {
+  background: var(--accent-tint);
+  color: var(--accent-edge);
+}
+:root[data-tema="elev"] .badge--pink {
+  background: var(--pink-bg);
+  color: var(--pink-text);
+}
+:root[data-tema="elev"] .ex-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 12px;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: inset 0 -3px 0 rgba(43, 33, 64, 0.12);
+}
+:root[data-tema="elev"] .ex-tile--I,
+:root[data-tema="elev"] .tile--I {
+  background: var(--topic-bg);
+  color: var(--topic-text);
+}
+:root[data-tema="elev"] .ex-tile--II,
+:root[data-tema="elev"] .tile--II {
+  background: var(--sky-bg);
+  color: var(--sky-text);
+}
+:root[data-tema="elev"] .ex-tile--III,
+:root[data-tema="elev"] .tile--III {
+  background: var(--pink-bg);
+  color: var(--pink-text);
+}
+:root[data-tema="elev"] .tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+:root[data-tema="elev"] .btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  height: var(--h-btn);
+  padding: 0 var(--s-4);
+  border: 2px solid transparent;
+  border-bottom-width: var(--edge);
+  border-radius: var(--r-btn);
+  font-size: 14px;
+  line-height: var(--lh-sm);
+  font-weight: 800;
+  white-space: nowrap;
+}
+:root[data-tema="elev"] .btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  border-bottom-color: var(--accent-edge);
+  color: var(--on-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+:root[data-tema="elev"] .btn--primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  border-bottom-color: var(--accent-edge);
+}
+:root[data-tema="elev"] .btn--secondary {
+  background: var(--surface);
+  border-color: var(--border-btn);
+  border-bottom-color: var(--border-btn-edge);
+  color: var(--text);
+}
+:root[data-tema="elev"] .btn--secondary .icon {
+  color: var(--accent-edge);
+}
+:root[data-tema="elev"] .btn--ghost {
+  padding: 0 10px;
+  color: var(--accent-text);
+}
+:root[data-tema="elev"] .btn--ghost:hover,
+:root[data-tema="elev"] .btn--pressed {
+  background: var(--accent-tint);
+  color: var(--accent-edge);
+}
+:root[data-tema="elev"] .btn--neutral {
+  padding: 0 10px;
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .btn--neutral:hover {
+  background: var(--surface-sunk);
+}
+:root[data-tema="elev"] .btn--ghost:active,
+:root[data-tema="elev"] .btn--neutral:active {
+  transform: none;
+  border-bottom-width: var(--edge);
+}
+:root[data-tema="elev"] .btn--danger {
+  background: var(--error);
+  border-color: var(--error);
+  border-bottom-color: var(--error-edge);
+  color: var(--on-color);
+}
+:root[data-tema="elev"] .no-file {
+  display: inline-flex;
+  align-items: center;
+  height: var(--h-btn);
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: var(--lh-sm);
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+:root[data-tema="elev"] .tick {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  height: 40px;
+  padding: 0 14px 0 8px;
+  background: var(--surface);
+  border: 2px solid var(--border-btn);
+  border-bottom-width: var(--edge);
+  border-radius: var(--r-pill);
+  font-size: 14px;
+  line-height: var(--lh-sm);
+  font-weight: 800;
+  color: var(--text);
+  white-space: nowrap;
+}
+:root[data-tema="elev"] .tick:hover {
+  background: var(--accent-subtle);
+}
+:root[data-tema="elev"] .tick__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2.5px solid var(--border-control);
+  border-radius: var(--r-pill);
+  color: var(--on-color);
+  flex-shrink: 0;
+}
+:root[data-tema="elev"] .tick--on,
+:root[data-tema="elev"] .tick--on:hover {
+  background: var(--success-bg);
+  border-color: var(--success-line);
+  border-bottom-color: var(--success-fill);
+  color: var(--success);
+}
+:root[data-tema="elev"] .tick--on .tick__circle {
+  background: var(--success-fill);
+  border-color: var(--success-fill);
+}
+:root[data-tema="elev"] .tick__circle .icon {
+  stroke-width: 3.5;
+}
+:root[data-tema="elev"] .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--r-pill);
+  flex-shrink: 0;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+}
+:root[data-tema="elev"] .progress {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: 14px;
+  line-height: var(--lh-sm);
+  font-weight: 700;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+:root[data-tema="elev"] .progress__bar {
+  display: flex;
+  width: 180px;
+  height: 14px;
+  border-radius: var(--r-pill);
+  background: var(--track);
+  overflow: hidden;
+}
+:root[data-tema="elev"] .progress__fill {
+  position: relative;
+  height: 14px;
+  border-radius: var(--r-pill);
+  background: var(--success-fill);
+  transition: width 0.4s ease;
+}
+:root[data-tema="elev"] .progress__fill::after,
+:root[data-tema="elev"] .big-bar__fill::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 3px;
+  height: 3px;
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, 0.35);
+}
+:root[data-tema="elev"] .progress__value {
+  font-weight: 800;
+  color: var(--text);
+}
+:root[data-tema="elev"] .empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-3);
+  padding: var(--s-6) var(--s-5);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: var(--r-card);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .empty__title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--text);
+}
+:root[data-tema="elev"] .dropdown {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px 0;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: 20px;
+  box-shadow: var(--shadow-pop);
+}
+:root[data-tema="elev"] .dropdown__title {
+  padding: var(--s-2) 18px;
+}
+:root[data-tema="elev"] .option {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  width: 100%;
+  min-height: 48px;
+  padding: 0 18px;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+:root[data-tema="elev"] .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2.5px solid var(--border-control);
+  border-radius: 8px;
+  color: var(--on-color);
+  flex-shrink: 0;
+}
+:root[data-tema="elev"] .dropdown__foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--s-2);
+  padding: 10px var(--s-4) 6px;
+  margin-top: var(--s-2);
+  border-top: 2px solid var(--border-soft);
+}
+:root[data-tema="elev"] .modal {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  width: 100%;
+  max-width: 440px;
+  padding: var(--s-5);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-pop);
+}
+:root[data-tema="elev"] .field__label {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 800;
+}
+:root[data-tema="elev"] .input {
+  height: var(--h-btn);
+  padding: 0 var(--s-3);
+  background: var(--surface);
+  border: 2px solid var(--border-control);
+  border-radius: var(--r-btn);
+  font-size: var(--fs-body);
+  font-weight: 600;
+}
+:root[data-tema="elev"] .my-progress {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: var(--s-4) var(--s-5) var(--s-4) var(--s-4);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: var(--r-card);
+}
+:root[data-tema="elev"] .my-progress__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+:root[data-tema="elev"] .my-progress__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-4);
+}
+:root[data-tema="elev"] .my-progress__title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+:root[data-tema="elev"] .my-progress__count {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .my-progress__count strong {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--success-fill);
+}
+:root[data-tema="elev"] .big-bar {
+  display: flex;
+  height: 20px;
+  border-radius: var(--r-pill);
+  background: var(--track);
+  overflow: hidden;
+}
+:root[data-tema="elev"] .big-bar__fill {
+  position: relative;
+  height: 20px;
+  min-width: 20px;
+  border-radius: var(--r-pill);
+  background: var(--success-fill);
+  transition: width 0.4s ease;
+}
+:root[data-tema="elev"] .big-bar__fill--zero {
+  min-width: 0;
+}
+:root[data-tema="elev"] .big-bar__fill::after {
+  left: 10px;
+  right: 10px;
+  top: 4px;
+  height: 5px;
+}
+:root[data-tema="elev"] .my-progress__hint {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root[data-tema="elev"] .progress__fill,
+:root[data-tema="elev"] .big-bar__fill {
+    transition: none;
+  }
+}
+@media (max-width: 760px) {
+  :root[data-tema="elev"] .my-progress .rapo {
+    display: none;
+  }
+  :root[data-tema="elev"] h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+/* iconițe mai groase */
+:root[data-tema="elev"] .icon {
+  stroke-width: 2.25;
+}

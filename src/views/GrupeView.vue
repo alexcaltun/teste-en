@@ -13,12 +13,6 @@ import { store, stergeGrupa, stergeMarcaj } from '../store.js';
 import { culoareGrupa, deschideDialogGrupa, arataToast } from '../ui.js';
 
 const PRIMELE = 8;
-// „Grupa A” → „A”, „Clasa a VIII-a” → „C”
-const initiala = (nume) => {
-  const cuvinte = nume.trim().split(/\s+/);
-  const ultim = cuvinte[cuvinte.length - 1] || '';
-  return (/^grupa$/i.test(cuvinte[0]) && ultim.length <= 3 ? ultim : nume.trim()[0] || '?').toUpperCase();
-};
 const route = useRoute();
 const router = useRouter();
 
@@ -132,11 +126,8 @@ function confirmaStergerea() {
           :aria-label="g.nume"
         >
           <div class="card__band" :style="{ background: culoareGrupa(g.culoare) }">
-            <span class="card__letter" :style="{ color: culoareGrupa(g.culoare) }" aria-hidden="true">{{ initiala(g.nume) }}</span>
-            <span class="card__titles">
-              <h2 class="card__name ellipsis">{{ g.nume }}</h2>
-              <span v-if="g.descriere" class="card__desc ellipsis">{{ g.descriere }}</span>
-            </span>
+            <h2 class="card__name ellipsis">{{ g.nume }}</h2>
+            <span v-if="g.descriere" class="card__desc ellipsis">{{ g.descriere }}</span>
           </div>
           <div class="card__body">
             <div class="stat">
@@ -256,52 +247,32 @@ function confirmaStergerea() {
   width: var(--w-card);
   max-width: 100%;
   background: var(--surface);
-  border: 2px solid var(--border);
-  border-bottom-width: var(--edge-card);
+  border: 1px solid var(--border);
   border-radius: var(--r-card);
-  overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 .card--activ {
-  border-color: var(--accent-line-strong);
-  border-bottom-color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
 }
 .card__band {
   display: flex;
-  align-items: center;
-  gap: 14px;
-  height: 100px;
-  padding: var(--s-4) 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--s-1);
+  height: 96px;
+  padding: var(--s-4) var(--s-5);
+  border-radius: 11px 11px 0 0;
   color: var(--on-color);
 }
-.card__letter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: var(--r-nav);
-  background: var(--surface);
-  font-family: var(--font-display);
-  font-size: 26px;
-  line-height: 32px;
-  font-weight: 700;
-  flex-shrink: 0;
-  box-shadow: inset 0 -4px 0 rgba(43, 33, 64, 0.15);
-}
-.card__titles {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
 .card__name {
-  font-size: 22px;
-  line-height: 28px;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
   font-weight: 600;
 }
 .card__desc {
-  font-size: 14px;
+  font-size: var(--fs-sm);
   line-height: var(--lh-sm);
-  font-weight: 700;
 }
 .card__body {
   display: flex;
@@ -318,7 +289,7 @@ function confirmaStergerea() {
 .stat__value {
   font-size: var(--fs-sm);
   line-height: var(--lh-sm);
-  font-weight: 700;
+  font-weight: 500;
 }
 .card__progress :deep(.progress__bar) {
   width: 120px;
@@ -328,7 +299,7 @@ function confirmaStergerea() {
   align-items: center;
   gap: var(--s-1);
   padding: var(--s-2) var(--s-3);
-  border-top: 2px solid var(--border-soft);
+  border-top: 1px solid var(--border);
 }
 .card__istoric {
   margin-left: auto;

@@ -160,7 +160,7 @@ const randDeschis = ref(null);
 </script>
 
 <template>
-  <div class="page">
+  <div class="page pagina-subiecte">
     <div class="page-head">
       <div class="page-head__text">
         <h1>Subiecte pe exerciții</h1>
@@ -229,7 +229,7 @@ const randDeschis = ref(null);
 
     <section v-for="sec in sectiuni" :key="sec.cheie" class="section" :aria-label="sec.titlu">
       <div class="section-head">
-        <span v-if="sec.subiect" class="tile" :class="`tile--${sec.subiect}`" aria-hidden="true"><Icon :name="ICON_SUBIECT[sec.subiect]" :size="22" /></span>
+        <span v-if="elev && sec.subiect" class="tile" :class="`tile--${sec.subiect}`" aria-hidden="true"><Icon :name="ICON_SUBIECT[sec.subiect]" :size="22" /></span>
         <h2>{{ sec.titlu }}</h2>
         <span class="section-meta">{{ sec.meta }}</span>
       </div>
@@ -249,7 +249,10 @@ const randDeschis = ref(null);
           :class="{ 'row--highlight': randDeschis === x.id, 'row--done': elev && bifat(x) }"
         >
           <span v-if="arataAn" class="cell ex col-an">{{ x.an }}</span>
-          <span class="cell col-ex"><span class="ex-tile" :class="`ex-tile--${x.subiect}`">{{ eticheta(x) }}</span></span>
+          <span class="cell col-ex" :class="{ ex: !elev }">
+            <span v-if="elev" class="ex-tile" :class="`ex-tile--${x.subiect}`">{{ eticheta(x) }}</span>
+            <template v-else>{{ eticheta(x) }}</template>
+          </span>
           <span v-if="arataSet" class="cell col-set">
             <span v-if="x.set"><span class="strong">Set {{ x.set }}</span><span v-if="DESCRIERE_SET[x.set]" class="muted"> · {{ DESCRIERE_SET[x.set] }}</span></span>
           </span>
@@ -283,17 +286,17 @@ const randDeschis = ref(null);
   width: 72px;
 }
 .col-ex {
-  width: 96px;
+  width: 80px;
 }
 .col-set {
   width: 200px;
 }
 .col-stare {
-  width: 200px;
+  width: 184px;
 }
 .col-act {
   width: 272px;
-  gap: var(--s-3);
+  gap: var(--s-5);
 }
 .cautare {
   display: flex;
@@ -303,5 +306,19 @@ const randDeschis = ref(null);
 }
 .cautare .chip {
   padding: 0 var(--s-3) 0 var(--s-4);
+}
+</style>
+
+<!-- tema „elev” -->
+<style>
+:root[data-tema="elev"] .pagina-subiecte .col-ex {
+  width: 96px;
+}
+:root[data-tema="elev"] .pagina-subiecte .col-stare {
+  width: 200px;
+}
+:root[data-tema="elev"] .pagina-subiecte .col-act {
+  width: 272px;
+  gap: var(--s-3);
 }
 </style>

@@ -1,5 +1,7 @@
 <script setup>
+import { computed } from 'vue';
 import Icon from './Icon.vue';
+import { store } from '../store.js';
 defineProps({
   label: { type: String, required: true },
   options: { type: Array, required: true }, // [{ value, label }]
@@ -8,11 +10,12 @@ defineProps({
 const emit = defineEmits(['update:modelValue']);
 // „1 · An” → pasul 1, eticheta „An”
 const pas = (label) => label.match(/^(\d+)\s*·\s*(.+)$/);
+const elev = computed(() => store.rol !== 'profesor');
 </script>
 
 <template>
   <div class="filter-row" role="group" :aria-label="label">
-    <span v-if="pas(label)" class="caption caption--pas">
+    <span v-if="elev && pas(label)" class="caption caption--pas">
       <span class="pas" aria-hidden="true">{{ pas(label)[1] }}</span><span class="sr-only">Pasul {{ pas(label)[1] }}: </span>{{ pas(label)[2] }}
     </span>
     <span v-else class="caption">{{ label }}</span>

@@ -94,7 +94,9 @@ function comuta(t) {
   }
 }
 
-const clasaTip = (tip) => (tip === 'Examen' ? 'badge--accent' : tip === 'Simulare' ? 'badge--pink' : 'badge--topic');
+// tema „elev” are și o insignă roz pentru simulări
+const clasaTip = (tip) =>
+  tip === 'Examen' ? 'badge--accent' : elev.value && tip === 'Simulare' ? 'badge--pink' : 'badge--topic';
 
 const rezumat = computed(() => {
   const p = [tip.value ? NUME_TIP[tip.value] : 'toate tipurile'];
@@ -114,7 +116,7 @@ const randDeschis = ref(null);
 </script>
 
 <template>
-  <div class="page">
+  <div class="page pagina-teste">
     <div class="page-head">
       <div class="page-head__text">
         <h1>Teste și bareme</h1>
@@ -214,11 +216,11 @@ const randDeschis = ref(null);
   width: 112px;
 }
 .col-stare {
-  width: 200px;
+  width: 168px;
 }
 .col-doc {
   width: 384px;
-  gap: var(--s-2);
+  gap: var(--s-1);
 }
 .nume {
   padding-right: var(--s-4);
@@ -226,8 +228,7 @@ const randDeschis = ref(null);
 .meta {
   white-space: nowrap;
 }
-.no-file,
-.col-barem {
+.no-file {
   width: 108px;
 }
 .cautare {
@@ -238,5 +239,20 @@ const randDeschis = ref(null);
 }
 .cautare .chip {
   padding: 0 var(--s-3) 0 var(--s-4);
+}
+</style>
+
+<!-- tema „elev” -->
+<style>
+:root[data-tema="elev"] .pagina-teste .col-stare {
+  width: 200px;
+}
+:root[data-tema="elev"] .pagina-teste .col-doc {
+  width: 384px;
+  gap: var(--s-2);
+}
+:root[data-tema="elev"] .pagina-teste .no-file,
+:root[data-tema="elev"] .pagina-teste .col-barem {
+  width: 108px;
 }
 </style>

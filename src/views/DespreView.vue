@@ -78,8 +78,7 @@ import { store } from '../store.js';
   gap: var(--s-3);
   padding: var(--s-5);
   background: var(--surface);
-  border: 2px solid var(--border);
-  border-bottom-width: var(--edge-card);
+  border: 1px solid var(--border);
   border-radius: var(--r-card);
   color: var(--text-secondary);
 }
@@ -90,14 +89,13 @@ import { store } from '../store.js';
   display: inline-flex;
   align-items: center;
   gap: var(--s-1);
-  color: var(--accent-text);
-  font-weight: 700;
+  color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 2px;
   word-break: break-all;
 }
 .link:hover {
-  color: var(--accent-edge);
+  color: var(--accent-hover);
 }
 .date {
   display: flex;
@@ -120,5 +118,33 @@ import { store } from '../store.js';
   align-items: center;
   gap: var(--s-2);
   color: var(--error);
+}
+</style>
+
+<!-- tema „elev” -->
+<style>
+:root[data-tema="elev"] .despre .bloc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-5);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
+  border-radius: var(--r-card);
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .despre .link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  color: var(--accent-text);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+:root[data-tema="elev"] .despre .link:hover {
+  color: var(--accent-edge);
 }
 </style>

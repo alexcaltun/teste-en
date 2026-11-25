@@ -4,8 +4,14 @@ import SideNav from './components/SideNav.vue';
 import AppToast from './components/AppToast.vue';
 import GroupDialog from './components/GroupDialog.vue';
 import RolePicker from './components/RolePicker.vue';
+import { watchEffect } from 'vue';
 import { ui } from './ui.js';
 import { store } from './store.js';
+
+// Profesorul vede aspectul inițial; elevul (și ecranul de alegere a rolului) tema „elev”.
+watchEffect(() => {
+  document.documentElement.dataset.tema = store.rol === 'profesor' ? 'profesor' : 'elev';
+});
 </script>
 
 <template>

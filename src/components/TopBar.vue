@@ -48,7 +48,7 @@ function cauta() {
         <Icon name="menu" :size="24" />
       </button>
       <RouterLink class="logo" to="/subiecte" aria-label="Teste EN, matematică: pagina de start">
-        <Rapo :size="44" />
+        <Rapo v-if="store.rol === 'elev'" :size="44" />
         <span class="logo__text"><span class="logo__mark">Teste EN</span><span class="logo__sub">matematică</span></span>
       </RouterLink>
     </div>
@@ -101,7 +101,7 @@ function cauta() {
   height: var(--h-topbar);
   padding: 0 var(--s-5) 0 var(--s-4);
   background: var(--surface);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 .topbar__left {
   display: flex;
@@ -116,33 +116,27 @@ function cauta() {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: var(--r-btn);
+  border-radius: var(--r-pill);
   color: var(--text-secondary);
 }
 .icon-btn:hover {
-  background: var(--surface-sunk);
+  background: var(--topic-bg);
 }
 .logo {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: var(--s-2);
   white-space: nowrap;
 }
-.logo__text {
-  display: flex;
-  flex-direction: column;
-}
 .logo__mark {
-  font-family: var(--font-display);
-  font-size: 22px;
-  line-height: 26px;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
   font-weight: 700;
-  color: var(--accent-text);
+  color: var(--accent);
 }
 .logo__sub {
-  font-size: var(--fs-caption);
-  line-height: var(--lh-caption);
-  font-weight: 700;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
   color: var(--text-muted);
 }
 .search-wrap {
@@ -158,14 +152,14 @@ function cauta() {
   height: var(--h-btn);
   padding: 0 var(--s-4);
   background: var(--surface);
-  border: 2px solid var(--border-control);
+  border: 1px solid var(--border-control);
   border-radius: var(--r-btn);
-  color: var(--text-secondary);
+  color: var(--text-muted);
   cursor: text;
 }
 .search:focus-within {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 .search input {
   flex: 1;
@@ -175,7 +169,6 @@ function cauta() {
   background: transparent;
   font-size: var(--fs-sm);
   line-height: var(--lh-sm);
-  font-weight: 600;
   color: var(--text);
 }
 .search input::placeholder {
@@ -188,12 +181,15 @@ function cauta() {
   right: 0;
   padding: var(--s-2) var(--s-3);
   background: var(--surface);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--r-btn);
   box-shadow: var(--shadow-pop);
   font-size: var(--fs-sm);
   line-height: var(--lh-sm);
   color: var(--text-secondary);
+}
+.logo__text {
+  display: contents;
 }
 .topbar__right {
   display: flex;
@@ -210,37 +206,38 @@ function cauta() {
   line-height: var(--lh-caption);
   color: var(--text-muted);
 }
+/* comutatorul Elev | Profesor */
 .role {
   display: flex;
   align-items: center;
   gap: var(--s-2);
 }
 .role__label {
-  font-size: 13px;
+  font-size: var(--fs-caption);
   line-height: var(--lh-caption);
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 .segmented {
   display: flex;
-  gap: var(--s-1);
-  padding: var(--s-1);
-  background: var(--surface-sunk);
-  border: 2px solid var(--border);
-  border-radius: var(--r-nav);
+  gap: 2px;
+  padding: 2px;
+  background: var(--surface);
+  border: 1px solid var(--border-control);
+  border-radius: var(--r-btn);
 }
 .segment {
   display: flex;
   align-items: center;
   gap: var(--s-2);
-  height: 36px;
-  padding: 0 14px;
-  border-radius: 11px;
-  font-size: 14px;
+  height: 34px;
+  padding: 0 var(--s-3);
+  border-radius: 6px;
+  font-size: var(--fs-sm);
   line-height: var(--lh-sm);
-  font-weight: 800;
+  font-weight: 500;
   color: var(--text-secondary);
 }
 .segment:hover {
@@ -250,7 +247,6 @@ function cauta() {
 .segment--on:hover {
   background: var(--accent);
   color: var(--on-color);
-  box-shadow: inset 0 -3px 0 var(--accent-edge);
 }
 @media (max-width: 760px) {
   .topbar {
@@ -281,13 +277,181 @@ function cauta() {
     clip: rect(0 0 0 0);
     white-space: nowrap;
   }
-  .logo .rapo {
-    display: none;
+  .segment {
+    padding: 0 10px;
   }
   .topbar__right {
     padding-left: var(--s-2);
   }
-  .segment {
+}
+</style>
+
+<!-- tema „elev” (vezi src/styles/tema-elev.css) -->
+<style>
+:root[data-tema="elev"] .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  height: var(--h-topbar);
+  padding: 0 var(--s-5) 0 var(--s-4);
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+}
+:root[data-tema="elev"] .topbar .icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-btn);
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .topbar .icon-btn:hover {
+  background: var(--surface-sunk);
+}
+:root[data-tema="elev"] .topbar .logo {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  white-space: nowrap;
+}
+:root[data-tema="elev"] .topbar .logo__text {
+  display: flex;
+  flex-direction: column;
+}
+:root[data-tema="elev"] .topbar .logo__mark {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--accent-text);
+}
+:root[data-tema="elev"] .topbar .logo__sub {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  font-weight: 700;
+  color: var(--text-muted);
+}
+:root[data-tema="elev"] .topbar .search {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  height: var(--h-btn);
+  padding: 0 var(--s-4);
+  background: var(--surface);
+  border: 2px solid var(--border-control);
+  border-radius: var(--r-btn);
+  color: var(--text-secondary);
+  cursor: text;
+}
+:root[data-tema="elev"] .topbar .search:focus-within {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+:root[data-tema="elev"] .topbar .search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: 600;
+  color: var(--text);
+}
+:root[data-tema="elev"] .topbar .search__msg {
+  position: absolute;
+  top: calc(100% + var(--s-2));
+  left: 0;
+  right: 0;
+  padding: var(--s-2) var(--s-3);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--r-btn);
+  box-shadow: var(--shadow-pop);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .topbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  margin-left: auto;
+  padding-left: var(--s-4);
+}
+:root[data-tema="elev"] .topbar .nosave {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  color: var(--text-muted);
+}
+:root[data-tema="elev"] .topbar .role {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+:root[data-tema="elev"] .topbar .role__label {
+  font-size: 13px;
+  line-height: var(--lh-caption);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+:root[data-tema="elev"] .topbar .segmented {
+  display: flex;
+  gap: var(--s-1);
+  padding: var(--s-1);
+  background: var(--surface-sunk);
+  border: 2px solid var(--border);
+  border-radius: var(--r-nav);
+}
+:root[data-tema="elev"] .topbar .segment {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 11px;
+  font-size: 14px;
+  line-height: var(--lh-sm);
+  font-weight: 800;
+  color: var(--text-secondary);
+}
+:root[data-tema="elev"] .topbar .segment:hover {
+  background: var(--accent-subtle);
+}
+:root[data-tema="elev"] .topbar .segment--on,
+:root[data-tema="elev"] .topbar .segment--on:hover {
+  background: var(--accent);
+  color: var(--on-color);
+  box-shadow: inset 0 -3px 0 var(--accent-edge);
+}
+@media (max-width: 760px) {
+  :root[data-tema="elev"] .topbar .nosave,
+:root[data-tema="elev"] .topbar .role__label {
+    display: none;
+  }
+  :root[data-tema="elev"] .topbar .segment__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  :root[data-tema="elev"] .topbar .logo .rapo {
+    display: none;
+  }
+  :root[data-tema="elev"] .topbar__right {
+    padding-left: var(--s-2);
+  }
+  :root[data-tema="elev"] .topbar .segment {
     padding: 0 10px;
   }
 }
