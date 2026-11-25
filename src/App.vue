@@ -4,6 +4,7 @@ import SideNav from './components/SideNav.vue';
 import AppToast from './components/AppToast.vue';
 import GroupDialog from './components/GroupDialog.vue';
 import RolePicker from './components/RolePicker.vue';
+import Confetti from './components/Confetti.vue';
 import { watchEffect } from 'vue';
 import { ui } from './ui.js';
 import { store } from './store.js';
@@ -26,6 +27,7 @@ watchEffect(() => {
       </main>
     </div>
     <AppToast />
+    <Confetti v-if="store.rol === 'elev'" />
     <GroupDialog v-if="ui.dialogGrupa" />
   </template>
 </template>

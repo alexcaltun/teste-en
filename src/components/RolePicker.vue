@@ -38,7 +38,7 @@ function laTasta(e) {
     </header>
     <main class="welcome">
       <div class="welcome__hero">
-        <Rapo :size="168" />
+        <Rapo :size="168" clipeste />
         <p class="bubble"><span class="bubble__tail" aria-hidden="true"></span>Salut! Eu sunt Rapo. Cine ești?</p>
       </div>
       <div class="welcome__text">

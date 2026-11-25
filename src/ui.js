@@ -2,7 +2,8 @@
 import { reactive } from 'vue';
 
 export const ui = reactive({
-  toast: null, // { id, mesaj, anuleaza, titlu, vesel }
+  toast: null, // { id, mesaj, anuleaza, titlu, vesel, sare }
+  confetti: 0, // momentul ultimei sărbători (elev); 0 = nimic
   dialogGrupa: null, // null | { grupa?: {...} }  (fără grupă = grupă nouă)
   meniuDeschis: false, // meniul lateral pe ecrane înguste
   meniuAscuns: false, // meniul lateral ascuns pe ecrane late
@@ -10,10 +11,10 @@ export const ui = reactive({
 
 let cronometru = null;
 
-/** `titlu` și `vesel` (Rapo zâmbește) sunt pentru mesajele de reușită: „Bravo!”, „Gata!”. */
-export function arataToast(mesaj, anuleaza = null, { titlu = '', vesel = false } = {}) {
+/** `titlu`, `vesel` (Rapo zâmbește) și `sare` (Rapo sare) sunt pentru mesajele de reușită ale elevului. */
+export function arataToast(mesaj, anuleaza = null, { titlu = '', vesel = false, sare = false } = {}) {
   clearTimeout(cronometru);
-  ui.toast = { id: Date.now(), mesaj, anuleaza, titlu, vesel };
+  ui.toast = { id: Date.now(), mesaj, anuleaza, titlu, vesel, sare };
   cronometru = setTimeout(() => (ui.toast = null), 5000);
 }
 
@@ -37,4 +38,14 @@ export const numeGrupa = (g) => (g ? (g.descriere ? `${g.nume} · ${g.descriere}
 export function comutaMeniu() {
   if (window.matchMedia('(max-width: 900px)').matches) ui.meniuDeschis = !ui.meniuDeschis;
   else ui.meniuAscuns = !ui.meniuAscuns;
+}
+
+/** Confetti peste pagină, când elevul termină un subiect sau un an. Nimic dacă sistemul cere mai puține animații. */
+export function sarbatoreste() {
+  try {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  } catch {
+    /* fără matchMedia: sărbătorim oricum */
+  }
+  ui.confetti = Date.now();
 }

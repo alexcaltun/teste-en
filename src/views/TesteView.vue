@@ -11,7 +11,8 @@ import TickButton from '../components/TickButton.vue';
 import MyProgress from '../components/MyProgress.vue';
 import { ANI, teste, anImplicitTeste, plural, potrivesteTest } from '../data.js';
 import { store, marcaj, bifa, comutaBifa } from '../store.js';
-import { arataToast } from '../ui.js';
+import { arataToast, sarbatoreste } from '../ui.js';
+import { serie, terminatTeste } from '../joc.js';
 
 const PRIMELE = 12;
 const TIPURI = [
@@ -84,13 +85,27 @@ const progresElev = computed(() => {
 });
 
 function comuta(t) {
+  const aziInainte = serie(store.bifate).azi;
   const r = comutaBifa('test', t.id);
-  if (r.bifat) {
-    const p = progresAn(t.an);
-    const text = p.bifate === p.total ? `Ai terminat toate testele din ${t.an}!` : `${t.an} · Ai ajuns la ${p.bifate} din ${p.total} teste.`;
-    arataToast(text, r.anuleaza, { titlu: `Bravo! Ai bifat ${t.nume}.`, vesel: true });
-  } else {
+  if (!r.bifat) {
     arataToast(`Am scos bifa de la ${t.nume}`, r.anuleaza);
+    return;
+  }
+  const p = progresAn(t.an);
+  const s = serie(store.bifate);
+  const textSerie = !aziInainte && s.azi ? ` Seria ta: ${plural(s.zile, 'zi', 'zile')} la rând!` : '';
+  if (terminatTeste(t).an) {
+    sarbatoreste();
+    arataToast(`Toate cele ${p.total} teste din ${t.an} sunt bifate.${textSerie}`, r.anuleaza, {
+      titlu: `Ai rezolvat toate testele din ${t.an}!`,
+      vesel: true,
+      sare: true,
+    });
+  } else {
+    arataToast(`${t.an} · Ai ajuns la ${p.bifate} din ${p.total} teste.${textSerie}`, r.anuleaza, {
+      titlu: `Bravo! Ai bifat ${t.nume}.`,
+      vesel: true,
+    });
   }
 }
 
@@ -248,7 +263,6 @@ const randDeschis = ref(null);
   width: 200px;
 }
 :root[data-tema="elev"] .pagina-teste .col-doc {
-  width: 384px;
   gap: var(--s-2);
 }
 :root[data-tema="elev"] .pagina-teste .no-file,

@@ -201,54 +201,29 @@ function grupaNoua() {
 <!-- tema „elev” (vezi src/styles/tema-elev.css) -->
 <style>
 :root[data-tema="elev"] .sidebar {
-  position: sticky;
-  top: var(--h-topbar);
-  display: flex;
-  flex-direction: column;
   gap: var(--s-3);
-  width: var(--w-sidebar);
-  height: calc(100vh - var(--h-topbar));
   padding: 20px var(--s-4) var(--s-5);
-  background: var(--surface);
   border-right: 2px solid var(--border);
-  flex-shrink: 0;
-  overflow-y: auto;
 }
 :root[data-tema="elev"] .sidebar .nav-group {
-  display: flex;
-  flex-direction: column;
   gap: var(--s-1);
 }
 :root[data-tema="elev"] .sidebar .nav-label {
   padding: var(--s-1) var(--s-3);
-  font-size: var(--fs-caption);
-  line-height: var(--lh-caption);
   font-weight: 800;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
 }
 :root[data-tema="elev"] .sidebar .nav-item {
-  display: flex;
-  align-items: center;
   gap: var(--s-3);
-  min-height: var(--h-nav);
   padding: 0 10px;
   border: 2px solid transparent;
-  border-radius: var(--r-nav);
-  font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
   font-weight: 700;
-  color: var(--text);
-  text-align: left;
-  min-width: 0;
 }
 :root[data-tema="elev"] .sidebar .nav-item:hover {
   background: var(--surface-sunk);
 }
 :root[data-tema="elev"] .sidebar .nav-item--active,
 :root[data-tema="elev"] .sidebar .nav-item--active:hover {
-  background: var(--accent-subtle);
   border-color: var(--accent-line);
   color: var(--accent-edge);
 }
@@ -284,14 +259,38 @@ function grupaNoua() {
 :root[data-tema="elev"] .sidebar .nav-divider {
   height: 2px;
   margin: var(--s-1) var(--s-3);
-  background: var(--border);
   border-radius: 2px;
 }
 :root[data-tema="elev"] .sidebar__footer {
-  display: flex;
-  flex-direction: column;
   gap: var(--s-1);
-  margin-top: auto;
+}
+@media (min-width: 901px) {
+  :root[data-tema="elev"] .sidebar--hidden {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  :root[data-tema="elev"] .sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--h-topbar);
+    z-index: 35;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.2s ease, visibility 0.2s;
+    box-shadow: var(--shadow-pop);
+  }
+  :root[data-tema="elev"] .sidebar--open {
+    transform: none;
+    visibility: visible;
+  }
+  :root[data-tema="elev"] .sidebar .scrim {
+    display: block;
+    position: fixed;
+    inset: var(--h-topbar) 0 0 0;
+    z-index: 34;
+    background: var(--overlay);
+  }
 }
 :root[data-tema="elev"] .sidebar .tile-s .icon {
   color: inherit;

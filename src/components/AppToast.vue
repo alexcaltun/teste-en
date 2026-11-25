@@ -15,7 +15,7 @@ function anuleaza() {
     <template v-if="ui.toast">
       <!-- tema „elev”: card alb, cu Rapo la reușite -->
       <div v-if="store.rol === 'elev'" :key="'k' + ui.toast.id" class="ktoast" :class="{ 'ktoast--vesel': ui.toast.vesel }">
-        <Rapo v-if="ui.toast.vesel" :size="60" mood="vesel" class="ktoast__rapo" />
+        <Rapo v-if="ui.toast.vesel" :size="60" mood="vesel" :sare="ui.toast.sare" class="ktoast__rapo" />
         <span v-else class="ktoast__icon"><Icon name="check" :size="18" /></span>
         <span class="ktoast__msg">
           <span v-if="ui.toast.titlu" class="ktoast__title">{{ ui.toast.titlu }}</span>

@@ -289,33 +289,16 @@ function cauta() {
 <!-- tema „elev” (vezi src/styles/tema-elev.css) -->
 <style>
 :root[data-tema="elev"] .topbar {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  display: flex;
-  align-items: center;
-  height: var(--h-topbar);
-  padding: 0 var(--s-5) 0 var(--s-4);
-  background: var(--surface);
   border-bottom: 2px solid var(--border);
 }
 :root[data-tema="elev"] .topbar .icon-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
   border-radius: var(--r-btn);
-  color: var(--text-secondary);
 }
 :root[data-tema="elev"] .topbar .icon-btn:hover {
   background: var(--surface-sunk);
 }
 :root[data-tema="elev"] .topbar .logo {
-  display: flex;
   align-items: center;
-  gap: var(--s-2);
-  white-space: nowrap;
 }
 :root[data-tema="elev"] .topbar .logo__text {
   display: flex;
@@ -325,55 +308,26 @@ function cauta() {
   font-family: var(--font-display);
   font-size: 22px;
   line-height: 26px;
-  font-weight: 700;
   color: var(--accent-text);
 }
 :root[data-tema="elev"] .topbar .logo__sub {
   font-size: var(--fs-caption);
   line-height: var(--lh-caption);
   font-weight: 700;
-  color: var(--text-muted);
 }
 :root[data-tema="elev"] .topbar .search {
-  display: flex;
-  align-items: center;
-  gap: var(--s-2);
-  height: var(--h-btn);
-  padding: 0 var(--s-4);
-  background: var(--surface);
   border: 2px solid var(--border-control);
-  border-radius: var(--r-btn);
   color: var(--text-secondary);
-  cursor: text;
 }
 :root[data-tema="elev"] .topbar .search:focus-within {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
 :root[data-tema="elev"] .topbar .search input {
-  flex: 1;
-  min-width: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
   font-weight: 600;
-  color: var(--text);
 }
 :root[data-tema="elev"] .topbar .search__msg {
-  position: absolute;
-  top: calc(100% + var(--s-2));
-  left: 0;
-  right: 0;
-  padding: var(--s-2) var(--s-3);
-  background: var(--surface);
   border: 2px solid var(--border);
-  border-radius: var(--r-btn);
-  box-shadow: var(--shadow-pop);
-  font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
-  color: var(--text-secondary);
 }
 :root[data-tema="elev"] .topbar__right {
   display: flex;
@@ -381,14 +335,6 @@ function cauta() {
   gap: var(--s-4);
   margin-left: auto;
   padding-left: var(--s-4);
-}
-:root[data-tema="elev"] .topbar .nosave {
-  display: flex;
-  align-items: center;
-  gap: var(--s-2);
-  font-size: var(--fs-caption);
-  line-height: var(--lh-caption);
-  color: var(--text-muted);
 }
 :root[data-tema="elev"] .topbar .role {
   display: flex;
@@ -433,6 +379,22 @@ function cauta() {
   box-shadow: inset 0 -3px 0 var(--accent-edge);
 }
 @media (max-width: 760px) {
+  :root[data-tema="elev"] .topbar {
+    padding: 0 var(--s-3) 0 var(--s-2);
+  }
+  :root[data-tema="elev"] .topbar__left {
+    width: auto;
+  }
+  :root[data-tema="elev"] .topbar .logo__sub {
+    display: none;
+  }
+  :root[data-tema="elev"] .topbar .search-wrap {
+    margin-left: var(--s-3);
+    flex: 1;
+  }
+  :root[data-tema="elev"] .topbar .search {
+    padding: 0 var(--s-3);
+  }
   :root[data-tema="elev"] .topbar .nosave,
 :root[data-tema="elev"] .topbar .role__label {
     display: none;

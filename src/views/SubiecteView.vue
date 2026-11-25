@@ -15,7 +15,8 @@ import {
   subiecte, aniCuSubiecte, anImplicitSubiecte, eticheta, plural, potrivesteSubiect,
 } from '../data.js';
 import { store, marcaj, bifa, comutaBifa } from '../store.js';
-import { arataToast } from '../ui.js';
+import { arataToast, sarbatoreste } from '../ui.js';
+import { serie, terminatSubiect } from '../joc.js';
 
 const ICON_SUBIECT = { I: 'hash', II: 'triangle', III: 'puzzle' };
 
@@ -145,14 +146,37 @@ const progresElev = computed(() => {
 });
 
 function comuta(x) {
+  const aziInainte = serie(store.bifate).azi;
   const r = comutaBifa('subiect', x.id);
   const et = `${x.set ? `Set ${x.set} · ` : ''}${eticheta(x)}`;
-  if (r.bifat) {
-    const p = progresAn(x.an);
-    const text = p.bifate === p.total ? `Ai terminat tot anul ${x.an}!` : `${x.an} · Ai ajuns la ${p.bifate} din ${p.total}.`;
-    arataToast(text, r.anuleaza, { titlu: `Bravo! Ai bifat ${et}.`, vesel: true });
-  } else {
+  if (!r.bifat) {
     arataToast(`Am scos bifa de la ${x.an} · ${et}`, r.anuleaza);
+    return;
+  }
+  const p = progresAn(x.an);
+  const gata = terminatSubiect(x);
+  // prima bifă de azi: seria crește
+  const s = serie(store.bifate);
+  const textSerie = !aziInainte && s.azi ? ` Seria ta: ${plural(s.zile, 'zi', 'zile')} la rând!` : '';
+  if (gata.an) {
+    sarbatoreste();
+    arataToast(`Toate cele ${p.total} exerciții din ${x.an} sunt bifate.${textSerie}`, r.anuleaza, {
+      titlu: `Ai terminat tot anul ${x.an}!`,
+      vesel: true,
+      sare: true,
+    });
+  } else if (gata.subiect) {
+    sarbatoreste();
+    arataToast(`${x.an} · Ai ajuns la ${p.bifate} din ${p.total}.${textSerie}`, r.anuleaza, {
+      titlu: `Ai terminat Subiectul ${x.subiect}${x.set ? ` · Set ${x.set}` : ''} din ${x.an}!`,
+      vesel: true,
+      sare: true,
+    });
+  } else {
+    arataToast(`${x.an} · Ai ajuns la ${p.bifate} din ${p.total}.${textSerie}`, r.anuleaza, {
+      titlu: `Bravo! Ai bifat ${et}.`,
+      vesel: true,
+    });
   }
 }
 
@@ -318,7 +342,6 @@ const randDeschis = ref(null);
   width: 200px;
 }
 :root[data-tema="elev"] .pagina-subiecte .col-act {
-  width: 272px;
   gap: var(--s-3);
 }
 </style>

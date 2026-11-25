@@ -6,6 +6,8 @@ const props = defineProps({
   size: { type: Number, default: 120 },
   mood: { type: String, default: 'normal' }, // 'normal' | 'vesel'
   decorativ: { type: Boolean, default: true },
+  clipeste: { type: Boolean, default: false }, // clipește din când în când
+  sare: { type: Boolean, default: false }, // sare de bucurie (de două ori)
 });
 
 const INK = '#2B2140';
@@ -26,6 +28,7 @@ for (let deg = 15; deg < 180; deg += 15) {
 <template>
   <svg
     class="rapo"
+    :class="{ 'rapo--clipeste': clipeste && mood !== 'vesel', 'rapo--sare': sare }"
     :width="size"
     :height="inaltime"
     viewBox="0 0 120 92"
@@ -48,10 +51,12 @@ for (let deg = 15; deg < 180; deg += 15) {
       <ellipse cx="60" cy="61.5" rx="5" ry="3" fill="#F472B6" />
     </template>
     <template v-else>
-      <g v-for="cx in [47, 73]" :key="cx">
-        <circle :cx="cx" cy="44" r="9" fill="#FFFFFF" :stroke="INK" stroke-width="3" />
-        <circle :cx="cx + 2" cy="45" r="4.5" :fill="INK" />
-        <circle :cx="cx + 3.5" cy="43" r="1.4" fill="#FFFFFF" />
+      <g class="rapo__ochi">
+        <g v-for="cx in [47, 73]" :key="cx">
+          <circle :cx="cx" cy="44" r="9" fill="#FFFFFF" :stroke="INK" stroke-width="3" />
+          <circle :cx="cx + 2" cy="45" r="4.5" :fill="INK" />
+          <circle :cx="cx + 3.5" cy="43" r="1.4" fill="#FFFFFF" />
+        </g>
       </g>
       <path d="M52 56 Q60 63 68 56" fill="none" :stroke="INK" stroke-width="3.5" stroke-linecap="round" />
     </template>
@@ -62,5 +67,41 @@ for (let deg = 15; deg < 180; deg += 15) {
 .rapo {
   flex-shrink: 0;
   overflow: visible;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rapo--clipeste .rapo__ochi {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: clipit 4.5s infinite;
+  }
+  .rapo--sare {
+    transform-origin: 50% 100%;
+    animation: sari 0.8s ease-out 2;
+  }
+}
+@keyframes clipit {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes sari {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  15% {
+    transform: translateY(0) scale(1.12, 0.88);
+  }
+  45% {
+    transform: translateY(-16px) scale(0.94, 1.06);
+  }
+  75% {
+    transform: translateY(0) scale(1.06, 0.94);
+  }
 }
 </style>
