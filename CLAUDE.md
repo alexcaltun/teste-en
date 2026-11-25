@@ -56,7 +56,8 @@ Fișierele PDF rămân pe e3.ro: aplicația doar trimite la ele.
 
 - **Prima vizită** (nimic salvat): ecranul „Cine folosește Teste EN?”, cu două carduri, „Sunt elev” și „Sunt profesor”, și butonul „Continuă”. Datele salvate înainte de roluri (grupe, marcaje) înseamnă profesor.
 - **Comutatorul „Sunt: Elev | Profesor”** din bara de sus schimbă rolul oricând. Datele ambelor roluri rămân salvate.
-- **Profesor:** totul ca mai jos (grupe, „Marchează”, „Grupele mele”).
+- **Profesor:** totul ca mai jos (grupe, „Marchează”, „Grupele mele”), cu aspectul inițial din `DESIGN.md` (secțiunile 3–10).
+- **Aspectul elevului** e tema „elev” din `DESIGN.md` (secțiunea 11); se aplică și pe ecranul de alegere a rolului.
 - **Elev:** fără grupe (dispar din meniu, iar `#/grupe` duce la subiecte), fără selectorul de grupă și fără „Marchează”. Coloana de stare devine „Statusul tău”, cu butonul „Bifează” / „Bifat · dată”, care se comută dintr-un click. Deasupra rezultatelor apare cardul „Progresul tău în <an>” (sau „toți anii”): bifate din total pentru anul ales. După bifare apare mesajul „Bravo! Ai bifat …”, cu „Anulează”.
 
 ## Ecranele

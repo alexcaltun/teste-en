@@ -1,6 +1,6 @@
 # DESIGN.md — Teste EN (index personal al subiectelor de pe e3.ro)
 
-Specificația vizuală a aplicației. Ecranele din `reference/` dau structura paginilor (varianta veche, albastră); culorile, fonturile și formele sunt cele de mai jos. Unde `reference/` și acest fișier diferă, are dreptate acest fișier. Comportamentul și datele sunt în `CLAUDE.md`.
+Specificația vizuală a aplicației. Ecranele din `reference/` arată exact cum trebuie să arate; acest fișier dă valorile. Unde `reference/` și acest fișier diferă, are dreptate acest fișier. Comportamentul și datele sunt în `CLAUDE.md`.
 
 ---
 
@@ -47,59 +47,54 @@ Lista completă (toate legile din cursurile 2, 7, 8, 9, cu auditul site-ului vec
 
 ## 3. Culori
 
-Varianta prietenoasă pentru copii (nov. 2026), inspirată de stilul aplicațiilor de învățat: culori vii, colțuri rotunde, butoane care par apăsabile. Nu folosim mascota, verdele sau logo-ul niciunei alte aplicații.
-
 | Token | Hex | Utilizare | Contrast verificat |
 |---|---|---|---|
-| `bg` | `#FFF8EE` | Fundal pagină (crem) | — |
+| `bg` | `#FAFAF7` | Fundal pagină (alb cald) | — |
 | `surface` | `#FFFFFF` | Bară sus, meniu lateral, carduri, tabel | — |
-| `border` | `#E9E2F3` | Contururi decorative (2 px; jos 5 px la carduri) | decorativ |
-| `border-control` | `#8E84A3` | Contur câmp de căutare, selector de grupă, căsuțe | 3,3:1 pe bg ✔ |
-| `text` | `#2B2140` | Text principal, titluri | 14,3:1 pe bg ✔ |
-| `text-secondary` | `#544A6B` | Subtitluri, descrieri | 7,8:1 pe bg ✔ |
-| `text-muted` | `#6B6280` | Metadate, etichete mici | 5,4:1 pe bg ✔ |
-| `accent` | `#7C3AED` (margine jos `#5B21B6`) | Buton principal, rol ales, focus | text alb 5,7:1 ✔ |
-| `accent-text` | `#6D28D9` | Linkuri, butoane text | 7,1:1 pe alb ✔ |
-| `accent-subtle` | `#F3EEFF` (contur `#A78BFA`) | Filtru selectat, element activ în meniu | text `#5B21B6` 7,6:1 ✔ |
-| `yellow` | `#FACC15` | Mascota, cerculețele cu pașii 1-2-3 | text `#2B2140` 9,8:1 ✔ |
-| `success` | `#166534` pe `#DCFCE7`; umplere `#15803D` | „Făcut”, „Bifat”, barele de progres | 6,5:1 ✔; umplere pe șină 4,1:1 ✔ |
-| `error` | `#B91C1C` | Ștergere | 5,9:1 ✔ |
-
-**Culori pe subiect** (eticheta exercițiului și pictograma secțiunii): I `#854D0E` pe `#FEF3C7` · II `#075985` pe `#E0F2FE` · III `#9D174D` pe `#FCE7F3` (toate ≥ 6:1).
+| `border` | `#E5E7EB` | Separatoare și contururi decorative (carduri, rânduri) | decorativ |
+| `border-control` | `#848C98` | Contur câmpuri, dropdown-uri, butoane-filtru neselectate | 3,39:1 pe alb ✔ |
+| `text` | `#1F2937` | Text principal, titluri | 14,0:1 pe bg ✔ |
+| `text-secondary` | `#4B5563` | Subtitluri, descrieri | 7,2:1 pe bg ✔ |
+| `text-muted` | `#6B7280` | Metadate, etichete mici | 4,6:1 pe bg ✔ |
+| `accent` | `#2563EB` | Butoane principale, filtru selectat, linkuri | 5,2:1 pe alb ✔ (text alb pe accent 5,2:1 ✔) |
+| `accent-hover` | `#1D4ED8` | Hover / pressed | 6,7:1 text alb ✔ |
+| `accent-subtle` | `#EFF4FF` | Element activ în meniu, rând selectat | text `#1D4ED8` 6,1:1 ✔ |
+| `success` | `#166534` pe `#DCFCE7` | Insigna „Făcut” | 6,5:1 ✔ |
+| `error` | `#B91C1C` pe `#FEF2F2` | Erori (nu apar în ecranele de bază) | 5,9:1 ✔ |
 
 **Culori de grupă** (bandă card + punct în meniu; text alb peste ele):
 `group-teal #0F766E` (5,5:1) · `group-indigo #4338CA` (7,9:1) · `group-amber #B45309` (5,0:1) · `group-rose #BE123C` (6,3:1)
 
 Reguli:
-- Un singur accent (violet). Verdele apare **doar** pentru „Făcut” / „Bifat” și progres.
-- Culoarea nu e singurul semnal: „Făcut” și „Bifat” au bifă și text; filtrul selectat are bifă.
-- Mascota **Rapo** (un raportor cu ochi, desen original, `src/components/Rapo.vue`) apare doar la alegerea rolului, în logo, în cardul „Progresul tău” și în mesajele de reușită. Nu o pune decorativ în altă parte.
+- Un singur accent (albastru). Verdele apare **doar** pentru „Făcut”.
+- Culoarea nu e singurul semnal: „Făcut” are și bifă, și text.
+- Fără gradienți, fără umbre grele.
 
 ---
 
 ## 4. Tipografie
 
-Fonturi: **Fredoka** (titluri) și **Nunito** (restul), de pe Google Fonts. Fallback: `system-ui, sans-serif`.
+Font: **Inter** (există implicit în Figma). Fallback: `system-ui, sans-serif`.
 
 | Stil | Mărime / înălțime rând | Greutate | Utilizare |
 |---|---|---|---|
-| `display` | 38 / 46 | Fredoka 600 | Titlul paginii (H1) |
-| `h2` | 24 / 32 | Fredoka 600 | Antet de secțiune, titlu card |
-| `body` | 16 / 24 | Nunito 600 | Text de bază |
-| `body-sm` | 15 / 20 | Nunito 700 | Rânduri tabel, meniu lateral |
-| `button` | 14 / 20 | Nunito 800 | Butoane; cel principal cu MAJUSCULE |
-| `caption` | 12 / 16 | Nunito 800 | Etichete (MAJUSCULE, spațiere 0,08em) |
+| `display` | 32 / 40 | 700 | Titlul paginii (H1) |
+| `h2` | 20 / 28 | 600 | Antet de secțiune (ex: „Subiectul II”) |
+| `h3` | 16 / 24 | 600 | Titlu card, antet coloană |
+| `body` | 16 / 24 | 400 | Text de bază |
+| `body-sm` | 14 / 20 | 400 / 500 | Rânduri tabel, meniu lateral, butoane |
+| `caption` | 12 / 16 | 500 | Etichete grup în meniu (MAJUSCULE, spațiere 0,04em), metadate |
 
-Numerele din tabel cu `font-variant-numeric: tabular-nums`.
+Reguli: max. 2 greutăți pe ecran în afara titlului; text aliniat la stânga; numerele din tabel cu `font-variant-numeric: tabular-nums`.
 
 ---
 
 ## 5. Spațiere, grilă, forme
 
 - **Grilă de 8 px.** Valori permise: 4, 8, 12, 16, 24, 32, 40, 48, 64.
-- Colțuri: butoane și filtre `14 px`; carduri și tabele `24 px`; element activ în meniu `16 px`; insigne `999 px`.
-- „3D”: contur 2 px, iar marginea de jos e mai groasă și mai închisă (4 px la butoane și filtre, 5 px la carduri). La click, butonul coboară 2 px.
-- Înălțimi: bară sus 72; element meniu 52; rând tabel 68; buton și filtru 44.
+- Colțuri: butoane și filtre `8 px`; filtre tip „pastilă” `999 px`; carduri `12 px`; element activ în meniu: `0 24px 24px 0` (ca în Google Classroom).
+- Contur: 1 px. Umbră: doar `0 1px 2px rgba(0,0,0,0.05)` pe carduri și dropdown deschis (`0 8px 24px rgba(0,0,0,0.12)`).
+- Înălțimi: bară sus 64; element meniu 44; rând tabel 56; buton 40 (zona de click 44 cu padding); filtru-pastilă 36 (zona de click 44).
 
 ---
 
@@ -128,7 +123,7 @@ Numerele din tabel cu `font-variant-numeric: tabular-nums`.
 
 **Bară sus:** fundal `surface`, contur jos `border`. Stânga: iconiță meniu, logo „Teste EN” (20/700, `accent`) + „matematică” (14, `text-muted`), pe un singur rând. Centru: câmp de căutare 400×40, placeholder „Caută: 2021 II.3, triunghi, Buzău…”. Fără avatar și fără cont: aplicația are un singur utilizator.
 
-**Meniu lateral:** fundal `surface`, contur dreapta `border`. Etichete de grup în stil `caption`, `text-muted`. Elemente 52 înălțime, iconiță 18 într-un pătrățel colorat de 34 + text `body-sm` 700. Activ: fundal `accent-subtle`, contur 2 px `#C4B5FD`, text `#5B21B6`, colțuri 16. Grupele au un punct colorat de 14 px în culoarea grupei. În rolul elev, secțiunea „Grupele mele” lipsește.
+**Meniu lateral:** fundal `surface`, contur dreapta `border`. Etichete de grup în stil `caption`, `text-muted`. Elemente 44 înălțime, iconiță 20 + text `body-sm` 500. Activ: fundal `accent-subtle`, text `accent-hover`, colțuri `0 24 24 0`. Grupele au un punct colorat de 10 px în culoarea grupei.
 
 Un singur meniu pe pagină (fără dublare în footer). Fără Bacalaureat, fără Contact. Jos în meniul lateral stă doar „Despre și surse” (de unde vine conținutul).
 
@@ -195,7 +190,7 @@ Un singur meniu pe pagină (fără dublare în footer). Fără Bacalaureat, făr
 
 ## 9. Conținut și ton
 - Română cu diacritice corecte (ș, ț cu virgulă).
-- Ton direct și prietenos, fără texte de umplutură. Exclamări doar în mesajele de reușită („Bravo! Ai bifat I.3.”, „Gata!”) și în îndemnurile din cardul de progres.
+- Ton direct, de unealtă: fără exclamări, fără texte de umplutură.
 - Date: „12 nov. 2026”. Exerciții: „II.3”. Ani fără „anul”.
 - Fără placeholdere („Lorem ipsum”, „Your Content Goes Here”), fără linkuri moarte, fără copyright vechi.
 
@@ -204,6 +199,71 @@ Un singur meniu pe pagină (fără dublare în footer). Fără Bacalaureat, făr
 ## 10. Reguli pentru implementare
 - Tokenii de mai sus devin variabile CSS (`--bg`, `--accent` etc.) într-un singur fișier; componentele nu folosesc culori sau distanțe scrise direct.
 - Bara de filtre poate rămâne fixă sus la derulare (`position: sticky`) — în aplicația reală e permis.
-- Fredoka și Nunito din Google Fonts; iconițe SVG inline (stil Lucide).
+- Inter din Google Fonts; iconițe SVG inline (stil Lucide).
 - Stările din `reference/02a` (meniu de marcare deschis) și `reference/02b` (confirmare) sunt stări reale ale aceleiași pagini, nu pagini separate.
-- Focus vizibil (contur 3 px `accent`) pe tot ce se poate apăsa.
+- Focus vizibil (contur 2 px `accent`) pe tot ce se poate apăsa.
+
+---
+
+## 11. Tema „elev” (pentru copii)
+
+Profesorul vede aspectul de mai sus (secțiunile 3–10). **Elevul** și ecranul de alegere a rolului văd tema „elev”: culori vii, colțuri rotunde, butoane care par apăsabile, inspirată de aplicațiile de învățat. Nu folosim mascota, verdele sau logo-ul niciunei alte aplicații.
+
+**Cum e implementată:** `<html data-tema="elev">` (setat în `App.vue` după rol). `src/styles/tema-elev.css` are tokenii temei și regulile care o schimbă, toate sub `:root[data-tema="elev"]`; componentele cu stiluri proprii au un al doilea bloc `<style>` cu aceleași prefixe. Ce există doar în tema „elev” (mascota, pătrățelele colorate din meniu, eticheta colorată a exercițiului, cerculețele cu pașii, cardul „Progresul tău”, mesajul cu Rapo) se afișează doar pentru elev. Nu schimba aspectul profesorului când lucrezi la tema „elev”.
+
+### Culori
+
+| Token | Hex | Utilizare | Contrast verificat |
+|---|---|---|---|
+| `bg` | `#FFF8EE` | Fundal pagină (crem) | — |
+| `surface` | `#FFFFFF` | Bară sus, meniu lateral, carduri, tabel | — |
+| `border` | `#E9E2F3` | Contururi decorative (2 px; jos 5 px la carduri) | decorativ |
+| `border-control` | `#8E84A3` | Contur câmp de căutare, selector de grupă, căsuțe | 3,3:1 pe bg ✔ |
+| `text` | `#2B2140` | Text principal, titluri | 14,3:1 pe bg ✔ |
+| `text-secondary` | `#544A6B` | Subtitluri, descrieri | 7,8:1 pe bg ✔ |
+| `text-muted` | `#6B6280` | Metadate, etichete mici | 5,4:1 pe bg ✔ |
+| `accent` | `#7C3AED` (margine jos `#5B21B6`) | Buton principal, rol ales, focus | text alb 5,7:1 ✔ |
+| `accent-text` | `#6D28D9` | Linkuri, butoane text | 7,1:1 pe alb ✔ |
+| `accent-subtle` | `#F3EEFF` (contur `#A78BFA`) | Filtru selectat, element activ în meniu | text `#5B21B6` 7,6:1 ✔ |
+| `yellow` | `#FACC15` | Mascota, cerculețele cu pașii 1-2-3 | text `#2B2140` 9,8:1 ✔ |
+| `success` | `#166534` pe `#DCFCE7`; umplere `#15803D` | „Făcut”, „Bifat”, barele de progres | 6,5:1 ✔; umplere pe șină 4,1:1 ✔ |
+| `error` | `#B91C1C` | Ștergere | 5,9:1 ✔ |
+
+**Culori pe subiect** (eticheta exercițiului și pictograma secțiunii): I `#854D0E` pe `#FEF3C7` · II `#075985` pe `#E0F2FE` · III `#9D174D` pe `#FCE7F3` (toate ≥ 6:1).
+
+**Culori de grupă** (bandă card + punct în meniu; text alb peste ele):
+`group-teal #0F766E` (5,5:1) · `group-indigo #4338CA` (7,9:1) · `group-amber #B45309` (5,0:1) · `group-rose #BE123C` (6,3:1)
+
+Reguli:
+- Un singur accent (violet). Verdele apare **doar** pentru „Făcut” / „Bifat” și progres.
+- Culoarea nu e singurul semnal: „Făcut” și „Bifat” au bifă și text; filtrul selectat are bifă.
+- Mascota **Rapo** (un raportor cu ochi, desen original, `src/components/Rapo.vue`) apare doar la alegerea rolului, în logo, în cardul „Progresul tău” și în mesajele de reușită. Nu o pune decorativ în altă parte.
+
+
+### Tipografie
+
+Fonturi: **Fredoka** (titluri) și **Nunito** (restul), de pe Google Fonts. Fallback: `system-ui, sans-serif`.
+
+| Stil | Mărime / înălțime rând | Greutate | Utilizare |
+|---|---|---|---|
+| `display` | 38 / 46 | Fredoka 600 | Titlul paginii (H1) |
+| `h2` | 24 / 32 | Fredoka 600 | Antet de secțiune, titlu card |
+| `body` | 16 / 24 | Nunito 600 | Text de bază |
+| `body-sm` | 15 / 20 | Nunito 700 | Rânduri tabel, meniu lateral |
+| `button` | 14 / 20 | Nunito 800 | Butoane; cel principal cu MAJUSCULE |
+| `caption` | 12 / 16 | Nunito 800 | Etichete (MAJUSCULE, spațiere 0,08em) |
+
+Numerele din tabel cu `font-variant-numeric: tabular-nums`.
+
+
+### Spațiere și forme
+
+- **Grilă de 8 px.** Valori permise: 4, 8, 12, 16, 24, 32, 40, 48, 64.
+- Colțuri: butoane și filtre `14 px`; carduri și tabele `24 px`; element activ în meniu `16 px`; insigne `999 px`.
+- „3D”: contur 2 px, iar marginea de jos e mai groasă și mai închisă (4 px la butoane și filtre, 5 px la carduri). La click, butonul coboară 2 px.
+- Înălțimi: bară sus 72; element meniu 52; rând tabel 68; buton și filtru 44.
+
+
+### Ton
+- Exclamări doar în mesajele de reușită („Bravo! Ai bifat I.3.”) și în îndemnurile din cardul de progres.
+- Focus vizibil: contur 3 px `accent`.
