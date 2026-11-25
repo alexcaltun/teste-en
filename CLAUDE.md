@@ -4,14 +4,18 @@ Instrucțiunile proiectului pentru Claude Code. Aspectul e în `DESIGN.md`; ecra
 
 ## Ce construim
 
-O aplicație web statică pentru un singur utilizator (eu, profesor de matematică). Listează testele și subiectele de Evaluare Națională la matematică de pe e3.ro, le filtrează pe an, subiect și exercițiu, și ține evidența a ce am dat fiecărei grupe de elevi. Fișierele PDF rămân pe e3.ro: aplicația doar trimite la ele.
+O aplicație web statică, fără conturi. Listează testele și subiectele de Evaluare Națională la matematică de pe e3.ro și le filtrează pe an, subiect și exercițiu. Are două roluri, alese la prima vizită și schimbate din bara de sus:
+- **Profesor:** ține evidența a ce am dat fiecărei grupe de elevi.
+- **Elev:** bifează exercițiile și testele rezolvate și vede o bară de progres.
+
+Fișierele PDF rămân pe e3.ro: aplicația doar trimite la ele.
 
 ## Reguli de neîncălcat
 
 - **Nu copia, nu descărca și nu găzdui PDF-urile.** Aplicația păstrează doar metadate (an, tip, nume, adresa fișierului) și deschide PDF-ul original de pe e3.ro într-un tab nou (`target="_blank" rel="noopener noreferrer"`).
 - **Nu folosi numele, logo-ul sau identitatea e3.ro.** Aplicația se numește „Teste EN”. Pagina „Despre și surse” spune clar că tot conținutul aparține e3.ro (prof. Valeriu Mocanu) și autorilor testelor, cu link la https://www.e3.ro.
 - **Doar Evaluarea Națională.** Fără Bacalaureat, fără testele de clasa a VI-a.
-- **Un singur utilizator:** fără conturi, login, backend sau bază de date.
+- **Fără conturi:** fără login, backend sau bază de date. Rolul (elev / profesor) se ține doar în browser.
 - **Tot ce modific se salvează doar local**, în browser (`localStorage`). Aplicația nu trimite date nicăieri.
 - **Public, dar neindexat:** `<meta name="robots" content="noindex, nofollow">` și `public/robots.txt` cu `User-agent: *` / `Disallow: /`.
 - **Datele se iau o singură dată:** scriptul de mai jos rulează doar când îl pornesc eu și face o singură cerere la pagină.
@@ -48,6 +52,13 @@ O aplicație web statică pentru un singur utilizator (eu, profesor de matematic
 - la final tipărește un **raport**: rândurile găsite per tabel față de numerele de mai sus, linkurile lipsă și rândurile pe care nu le-a putut încadra;
 - `src/data/overrides.json` (gol la început, `{}`) îmi permite să corectez de mână `nume` sau `tip` pentru un `id`; aplicația îl aplică peste `en.json`.
 
+## Rolurile
+
+- **Prima vizită** (nimic salvat): ecranul „Cine folosește Teste EN?”, cu două carduri, „Sunt elev” și „Sunt profesor”, și butonul „Continuă”. Datele salvate înainte de roluri (grupe, marcaje) înseamnă profesor.
+- **Comutatorul „Sunt: Elev | Profesor”** din bara de sus schimbă rolul oricând. Datele ambelor roluri rămân salvate.
+- **Profesor:** totul ca mai jos (grupe, „Marchează”, „Grupele mele”).
+- **Elev:** fără grupe (dispar din meniu, iar `#/grupe` duce la subiecte), fără selectorul de grupă și fără „Marchează”. Coloana de stare devine „Statusul tău”, cu butonul „Bifează” / „Bifat · dată”, care se comută dintr-un click. Deasupra rezultatelor apare cardul „Progresul tău în <an>” (sau „toți anii”): bifate din total pentru anul ales. După bifare apare mesajul „Bravo! Ai bifat …”, cu „Anulează”.
+
 ## Ecranele
 
 Arată exact ca în `reference/` și `DESIGN.md`, cu diferențele de mai jos.
@@ -78,7 +89,7 @@ Arată exact ca în `reference/` și `DESIGN.md`, cu diferențele de mai jos.
 
 ## Stocarea locală
 
-- `localStorage`, cheia `testeEN:v1`, un singur obiect JSON: `{ "grupe": [{ "id", "nume", "descriere", "culoare" }], "facute": [{ "id", "grupaId", "tip": "subiect" | "test", "itemId", "data" }], "grupaSelectata": "<id>" }`.
+- `localStorage`, cheia `testeEN:v1`, un singur obiect JSON: `{ "rol": "elev" | "profesor", "grupe": [{ "id", "nume", "descriere", "culoare" }], "facute": [{ "id", "grupaId", "tip": "subiect" | "test", "itemId", "data" }], "grupaSelectata": "<id>", "bifate": [{ "id", "tip": "subiect" | "test", "itemId", "data" }] }`. `bifate` sunt ale elevului; `facute` sunt ale grupelor profesorului.
 - Toate citirile și scrierile trec printr-un singur modul (`src/store.js`), cu `try/catch`. Dacă `localStorage` nu e disponibil, aplicația merge mai departe, nu salvează și arată un mesaj discret.
 
 ## Publicarea
