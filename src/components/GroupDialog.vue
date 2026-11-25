@@ -110,9 +110,12 @@ function salveaza() {
   border-radius: var(--r-pill);
   color: var(--on-color);
 }
+.gd__swatch {
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+}
 .gd__culoare:has(input:focus-visible) .gd__swatch {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
 .gd__preview {
   display: flex;
@@ -125,6 +128,7 @@ function salveaza() {
   color: var(--on-color);
 }
 .gd__pnume {
+  font-family: var(--font-display);
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
   font-weight: 600;

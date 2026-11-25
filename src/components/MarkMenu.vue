@@ -51,7 +51,11 @@ const nume = (ids) =>
 function salveaza() {
   const r = seteazaMarcaje(props.tip, props.itemId, [...bifate.value]);
   inchide(true);
-  if (r.adaugate.length) arataToast(`Marcat ca făcut pentru ${nume(r.adaugate)}`, r.anuleaza);
+  if (r.adaugate.length)
+    arataToast(`Marcat ca făcut pentru ${nume(r.adaugate)}${props.descriere ? ` · ${props.descriere}` : ''}`, r.anuleaza, {
+      titlu: 'Gata!',
+      vesel: true,
+    });
   else if (r.sterse.length) arataToast(`Marcaj șters pentru ${nume(r.sterse)}`, r.anuleaza);
 }
 

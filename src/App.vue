@@ -3,20 +3,25 @@ import TopBar from './components/TopBar.vue';
 import SideNav from './components/SideNav.vue';
 import AppToast from './components/AppToast.vue';
 import GroupDialog from './components/GroupDialog.vue';
+import RolePicker from './components/RolePicker.vue';
 import { ui } from './ui.js';
+import { store } from './store.js';
 </script>
 
 <template>
-  <a class="skip" href="#continut">Sari la conținut</a>
-  <TopBar />
-  <div class="shell" :class="{ 'shell--full': ui.meniuAscuns }">
-    <SideNav />
-    <main id="continut" class="main" tabindex="-1">
-      <RouterView />
-    </main>
-  </div>
-  <AppToast />
-  <GroupDialog v-if="ui.dialogGrupa" />
+  <RolePicker v-if="!store.rol" />
+  <template v-else>
+    <a class="skip" href="#continut">Sari la conținut</a>
+    <TopBar />
+    <div class="shell" :class="{ 'shell--full': ui.meniuAscuns }">
+      <SideNav />
+      <main id="continut" class="main" tabindex="-1">
+        <RouterView />
+      </main>
+    </div>
+    <AppToast />
+    <GroupDialog v-if="ui.dialogGrupa" />
+  </template>
 </template>
 
 <style>

@@ -1,43 +1,65 @@
-/* Tokenii din DESIGN.md. Componentele folosesc doar aceste variabile. */
+/* Tokenii din DESIGN.md (varianta prietenoasă pentru copii). Componentele folosesc doar aceste variabile. */
 :root {
   /* culori */
-  --bg: #fafaf7;
+  --bg: #fff8ee;
   --surface: #ffffff;
-  --border: #e5e7eb;
-  --border-control: #848c98;
-  --text: #1f2937;
-  --text-secondary: #4b5563;
-  --text-muted: #6b7280;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-subtle: #eff4ff;
+  --surface-sunk: #f4f0fa;
+  --border: #e9e2f3;
+  --border-soft: #f1ecf8;
+  --border-btn: #ddd5ea;
+  --border-btn-edge: #c9beda;
+  --border-control: #8e84a3;
+  --text: #2b2140;
+  --text-secondary: #544a6b;
+  --text-muted: #6b6280;
+  --accent: #7c3aed;
+  --accent-edge: #5b21b6;
+  --accent-hover: #6d28d9;
+  --accent-text: #6d28d9;
+  --accent-subtle: #f3eeff;
+  --accent-tint: #ede9fe;
+  --accent-line: #c4b5fd;
+  --accent-line-strong: #a78bfa;
+  --yellow: #facc15;
+  --yellow-edge: #ca8a04;
   --success: #166534;
+  --success-fill: #15803d;
   --success-bg: #dcfce7;
+  --success-row: #f6fdf8;
+  --success-line: #86efac;
   --error: #b91c1c;
+  --error-edge: #7f1d1d;
   --error-bg: #fef2f2;
-  --topic-bg: #f3f4f6;
-  --toast-action: #93c5fd;
-  --toast-close: #d1d5db;
+  --topic-bg: #fef3c7;
+  --topic-text: #854d0e;
+  --pink-bg: #fce7f3;
+  --pink-text: #9d174d;
+  --sky-bg: #e0f2fe;
+  --sky-text: #075985;
+  --teal-bg: #ccfbf1;
+  --teal-text: #115e59;
+  --track: #ece7f5;
   --on-color: #ffffff;
-  --overlay: rgba(31, 41, 55, 0.4);
+  --overlay: rgba(43, 33, 64, 0.45);
 
-  /* culori de grupă */
+  /* culori de grupă (text alb pe ele: minimum 4,5:1) */
   --group-teal: #0f766e;
   --group-indigo: #4338ca;
   --group-amber: #b45309;
   --group-rose: #be123c;
 
   /* tipografie */
-  --font: 'Inter', system-ui, sans-serif;
-  --fs-display: 32px;
-  --lh-display: 40px;
-  --fs-h2: 20px;
-  --lh-h2: 28px;
-  --fs-h3: 16px;
-  --lh-h3: 24px;
+  --font: 'Nunito', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  --fs-display: 38px;
+  --lh-display: 46px;
+  --fs-h2: 24px;
+  --lh-h2: 32px;
+  --fs-h3: 18px;
+  --lh-h3: 26px;
   --fs-body: 16px;
   --lh-body: 24px;
-  --fs-sm: 14px;
+  --fs-sm: 15px;
   --lh-sm: 20px;
   --fs-caption: 12px;
   --lh-caption: 16px;
@@ -53,23 +75,25 @@
   --s-8: 48px;
   --s-9: 64px;
 
-  /* forme */
-  --r-btn: 8px;
-  --r-card: 12px;
+  /* forme: colțuri rotunde, margine de jos mai groasă („3D”) */
+  --r-btn: 14px;
+  --r-card: 24px;
   --r-pill: 999px;
-  --r-nav: 0 24px 24px 0;
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --r-nav: 16px;
+  --edge: 4px;
+  --edge-card: 5px;
+  --shadow-card: none;
+  --shadow-pop: 0 12px 28px rgba(43, 33, 64, 0.16);
 
   /* înălțimi */
-  --h-topbar: 64px;
-  --h-nav: 44px;
-  --h-row: 56px;
-  --h-btn: 40px;
-  --h-chip: 36px;
-  --h-thead: 40px;
-  --h-toast: 48px;
-  --h-badge: 24px;
+  --h-topbar: 72px;
+  --h-nav: 52px;
+  --h-row: 68px;
+  --h-btn: 44px;
+  --h-chip: 44px;
+  --h-thead: 44px;
+  --h-toast: 56px;
+  --h-badge: 28px;
   --w-sidebar: 272px;
   --w-content: 1040px;
   --w-search: 400px;

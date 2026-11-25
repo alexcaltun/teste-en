@@ -2,7 +2,7 @@
 import { reactive } from 'vue';
 
 export const ui = reactive({
-  toast: null, // { id, mesaj, anuleaza }
+  toast: null, // { id, mesaj, anuleaza, titlu, vesel }
   dialogGrupa: null, // null | { grupa?: {...} }  (fără grupă = grupă nouă)
   meniuDeschis: false, // meniul lateral pe ecrane înguste
   meniuAscuns: false, // meniul lateral ascuns pe ecrane late
@@ -10,9 +10,10 @@ export const ui = reactive({
 
 let cronometru = null;
 
-export function arataToast(mesaj, anuleaza = null) {
+/** `titlu` și `vesel` (Rapo zâmbește) sunt pentru mesajele de reușită: „Bravo!”, „Gata!”. */
+export function arataToast(mesaj, anuleaza = null, { titlu = '', vesel = false } = {}) {
   clearTimeout(cronometru);
-  ui.toast = { id: Date.now(), mesaj, anuleaza };
+  ui.toast = { id: Date.now(), mesaj, anuleaza, titlu, vesel };
   cronometru = setTimeout(() => (ui.toast = null), 5000);
 }
 

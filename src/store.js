@@ -1,15 +1,21 @@
 // Singurul loc care citește și scrie în localStorage.
-// Forma: { grupe: [{ id, nume, descriere, culoare }],
-//          facute: [{ id, grupaId, tip: 'subiect'|'test', itemId, data }],
-//          grupaSelectata: '<id>' }
+// Forma: { rol: 'elev'|'profesor',
+//          grupe: [{ id, nume, descriere, culoare }],
+//          facute: [{ id, grupaId, tip: 'subiect'|'test', itemId, data }],   (profesor: ce a făcut fiecare grupă)
+//          grupaSelectata: '<id>',
+//          bifate: [{ id, tip: 'subiect'|'test', itemId, data }] }          (elev: ce a rezolvat el)
 import { reactive, readonly } from 'vue';
 
 const CHEIE = 'testeEN:v1';
 export const CULORI = ['teal', 'indigo', 'amber', 'rose'];
 export const NUME_CULORI = { teal: 'Verde-albastru', indigo: 'Indigo', amber: 'Chihlimbar', rose: 'Roșu' };
+export const ROLURI = ['elev', 'profesor'];
 
 const stare = reactive({
+  /** null până când utilizatorul alege cine este */
+  rol: null,
   grupe: [],
+  bifate: [],
   facute: [],
   grupaSelectata: null,
   /** false dacă localStorage nu merge (navigare privată, blocat) */
@@ -39,6 +45,11 @@ function citeste() {
       ? d.facute.filter((f) => f && f.id && ids.has(f.grupaId) && (f.tip === 'subiect' || f.tip === 'test') && f.itemId && f.data)
       : [];
     stare.grupaSelectata = ids.has(d.grupaSelectata) ? d.grupaSelectata : stare.grupe[0]?.id ?? null;
+    stare.bifate = Array.isArray(d.bifate)
+      ? d.bifate.filter((b) => b && b.id && (b.tip === 'subiect' || b.tip === 'test') && b.itemId && b.data)
+      : [];
+    // datele salvate înainte de roluri erau ale unui profesor
+    stare.rol = ROLURI.includes(d.rol) ? d.rol : stare.grupe.length || stare.facute.length ? 'profesor' : null;
   } catch {
     // date stricate sau localStorage blocat: pornim gol
   }
@@ -48,7 +59,13 @@ function scrie() {
   try {
     window.localStorage.setItem(
       CHEIE,
-      JSON.stringify({ grupe: stare.grupe, facute: stare.facute, grupaSelectata: stare.grupaSelectata }),
+      JSON.stringify({
+        rol: stare.rol,
+        grupe: stare.grupe,
+        facute: stare.facute,
+        grupaSelectata: stare.grupaSelectata,
+        bifate: stare.bifate,
+      }),
     );
     stare.salvareDisponibila = true;
   } catch {
@@ -80,6 +97,13 @@ try {
 }
 
 export const store = readonly(stare);
+
+// ---------- rol ----------
+export function seteazaRol(rol) {
+  if (!ROLURI.includes(rol)) return;
+  stare.rol = rol;
+  scrie();
+}
 
 // ---------- grupe ----------
 export function adaugaGrupa({ nume, descriere, culoare }) {
@@ -168,5 +192,39 @@ export function stergeMarcaj(id) {
       stare.facute.push(f);
       scrie();
     }
+  };
+}
+
+// ---------- elev: bifele proprii ----------
+/** bifa elevului pentru un element, sau null */
+export function bifa(tip, itemId) {
+  return stare.bifate.find((b) => b.tip === tip && b.itemId === itemId) || null;
+}
+
+/** Bifează sau debifează. Întoarce { bifat, anuleaza }. */
+export function comutaBifa(tip, itemId) {
+  const existenta = bifa(tip, itemId);
+  if (existenta) {
+    stare.bifate = stare.bifate.filter((b) => b.id !== existenta.id);
+    scrie();
+    return {
+      bifat: false,
+      anuleaza() {
+        if (!bifa(tip, itemId)) {
+          stare.bifate.push(existenta);
+          scrie();
+        }
+      },
+    };
+  }
+  const b = { id: idNou('b'), tip, itemId, data: new Date().toISOString() };
+  stare.bifate.push(b);
+  scrie();
+  return {
+    bifat: true,
+    anuleaza() {
+      stare.bifate = stare.bifate.filter((x) => x.id !== b.id);
+      scrie();
+    },
   };
 }

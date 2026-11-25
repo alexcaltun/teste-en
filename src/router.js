@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import SubiecteView from './views/SubiecteView.vue';
+import { store } from './store.js';
 
 const TITLURI = {
   '/subiecte': 'Subiecte pe exerciții',
@@ -24,6 +25,12 @@ export const router = createRouter({
     if (to.path !== from.path) return { top: 0 };
     return false;
   },
+});
+
+// elevul nu are grupe
+router.beforeEach((to) => {
+  if (to.path === '/grupe' && store.rol === 'elev') return { path: '/subiecte' };
+  return true;
 });
 
 router.afterEach((to) => {

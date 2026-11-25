@@ -90,14 +90,15 @@ function laTasta(e) {
   align-items: center;
   gap: var(--s-2);
   height: var(--h-btn);
-  max-width: 280px;
-  padding: 0 var(--s-3) 0 var(--s-4);
+  max-width: 300px;
+  padding: 0 var(--s-3) 0 14px;
   background: var(--surface);
-  border: 1px solid var(--border-control);
+  border: 2px solid var(--border-control);
+  border-bottom-width: var(--edge);
   border-radius: var(--r-btn);
   font-size: var(--fs-sm);
   line-height: var(--lh-sm);
-  font-weight: 500;
+  font-weight: 800;
 }
 .select:hover {
   background: var(--accent-subtle);
@@ -112,7 +113,7 @@ function laTasta(e) {
 }
 .option__check {
   margin-left: auto;
-  color: var(--accent);
+  color: var(--accent-edge);
   flex-shrink: 0;
 }
 .gs__foot {

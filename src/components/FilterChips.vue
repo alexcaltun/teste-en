@@ -6,11 +6,16 @@ defineProps({
   modelValue: { default: null },
 });
 const emit = defineEmits(['update:modelValue']);
+// „1 · An” → pasul 1, eticheta „An”
+const pas = (label) => label.match(/^(\d+)\s*·\s*(.+)$/);
 </script>
 
 <template>
   <div class="filter-row" role="group" :aria-label="label">
-    <span class="caption">{{ label }}</span>
+    <span v-if="pas(label)" class="caption caption--pas">
+      <span class="pas" aria-hidden="true">{{ pas(label)[1] }}</span><span class="sr-only">Pasul {{ pas(label)[1] }}: </span>{{ pas(label)[2] }}
+    </span>
+    <span v-else class="caption">{{ label }}</span>
     <div class="chips">
       <button
         v-for="o in options"
@@ -26,3 +31,24 @@ const emit = defineEmits(['update:modelValue']);
     </div>
   </div>
 </template>
+
+<style scoped>
+.caption--pas {
+  display: flex;
+  align-items: center;
+}
+.pas {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-right: var(--s-2);
+  border-radius: var(--r-pill);
+  background: var(--yellow);
+  color: var(--text);
+  font-size: var(--fs-caption);
+  letter-spacing: 0;
+  box-shadow: inset 0 -2px 0 var(--yellow-edge);
+}
+</style>

@@ -7,8 +7,11 @@ import GroupSelect from '../components/GroupSelect.vue';
 import DoneBadge from '../components/DoneBadge.vue';
 import MarkMenu from '../components/MarkMenu.vue';
 import PdfLink from '../components/PdfLink.vue';
+import TickButton from '../components/TickButton.vue';
+import MyProgress from '../components/MyProgress.vue';
 import { ANI, teste, anImplicitTeste, plural, potrivesteTest } from '../data.js';
-import { store, marcaj } from '../store.js';
+import { store, marcaj, bifa, comutaBifa } from '../store.js';
+import { arataToast } from '../ui.js';
 
 const PRIMELE = 12;
 const TIPURI = [
@@ -54,8 +57,44 @@ const toate = ref(false);
 watch(() => route.fullPath, () => (toate.value = false));
 const vizibile = computed(() => (toate.value ? rezultate.value : rezultate.value.slice(0, PRIMELE)));
 
-const grupa = computed(() => store.grupe.find((g) => g.id === store.grupaSelectata) || null);
+const elev = computed(() => store.rol === 'elev');
+const grupa = computed(() => (elev.value ? null : store.grupe.find((g) => g.id === store.grupaSelectata) || null));
 const facut = (t) => (grupa.value ? marcaj(grupa.value.id, 'test', t.id) : null);
+const bifat = (t) => bifa('test', t.id);
+
+// ---------- elev: progresul pe anul ales (sau pe toți anii) ----------
+const progresAn = (a) => {
+  const lista = a === null ? teste : teste.filter((t) => t.an === a);
+  return { bifate: lista.filter(bifat).length, total: lista.length };
+};
+const progresElev = computed(() => {
+  if (!elev.value) return null;
+  const p = progresAn(an.value);
+  if (!p.total) return null;
+  const rest = p.total - p.bifate;
+  let indemn = 'Bifează un test după ce l-ai rezolvat.';
+  if (!rest) indemn = 'Le-ai rezolvat pe toate. Bravo!';
+  else if (p.bifate) indemn = `Mai ai ${plural(rest, 'test', 'teste')}. Ține-o tot așa!`;
+  return {
+    titlu: an.value === null ? 'Progresul tău, toți anii' : `Progresul tău în ${an.value}`,
+    bifate: p.bifate,
+    total: p.total,
+    indemn,
+  };
+});
+
+function comuta(t) {
+  const r = comutaBifa('test', t.id);
+  if (r.bifat) {
+    const p = progresAn(t.an);
+    const text = p.bifate === p.total ? `Ai terminat toate testele din ${t.an}!` : `${t.an} · Ai ajuns la ${p.bifate} din ${p.total} teste.`;
+    arataToast(text, r.anuleaza, { titlu: `Bravo! Ai bifat ${t.nume}.`, vesel: true });
+  } else {
+    arataToast(`Am scos bifa de la ${t.nume}`, r.anuleaza);
+  }
+}
+
+const clasaTip = (tip) => (tip === 'Examen' ? 'badge--accent' : tip === 'Simulare' ? 'badge--pink' : 'badge--topic');
 
 const rezumat = computed(() => {
   const p = [tip.value ? NUME_TIP[tip.value] : 'toate tipurile'];
@@ -93,9 +132,18 @@ const randDeschis = ref(null);
       <FilterChips label="1 · An" :options="optAni" :model-value="an ?? 'toti'" @update:model-value="(v) => seteaza({ an: v })" />
       <div class="filter-split">
         <FilterChips label="2 · Tip" :options="TIPURI" :model-value="tip" @update:model-value="(v) => seteaza({ tip: v })" />
-        <GroupSelect />
+        <GroupSelect v-if="!elev" />
       </div>
     </section>
+
+    <MyProgress
+      v-if="progresElev"
+      :titlu="progresElev.titlu"
+      :value="progresElev.bifate"
+      :max="progresElev.total"
+      unitate="teste bifate"
+      :indemn="progresElev.indemn"
+    />
 
     <div class="summary">
       <div class="summary__text">
@@ -120,23 +168,32 @@ const randDeschis = ref(null);
       <div class="thead">
         <span class="cell cell--grow caption">Test</span>
         <span class="cell caption col-tip">Tip</span>
-        <span class="cell caption col-stare">{{ grupa ? grupa.nume : 'Stare' }}</span>
+        <span class="cell caption col-stare">{{ elev ? 'Statusul tău' : grupa ? grupa.nume : 'Stare' }}</span>
         <span class="cell cell--end caption col-doc">Documente</span>
       </div>
-      <div v-for="t in vizibile" :key="t.id" class="row" :class="{ 'row--highlight': randDeschis === t.id }">
+      <div
+        v-for="t in vizibile"
+        :key="t.id"
+        class="row"
+        :class="{ 'row--highlight': randDeschis === t.id, 'row--done': elev && bifat(t) }"
+      >
         <span class="cell cell--grow nume">
           <span class="strong ellipsis" :title="t.numeOriginal">{{ t.nume }}</span>
           <span v-if="t.set || an === null" class="muted meta">{{ an === null ? t.an : '' }}{{ an === null && t.set ? ' · ' : '' }}{{ t.set ? `Set ${t.set}` : '' }}</span>
         </span>
         <span class="cell col-tip">
-          <span class="badge" :class="t.tip === 'Examen' ? 'badge--accent' : 'badge--topic'">{{ t.tip }}</span>
+          <span class="badge" :class="clasaTip(t.tip)">{{ t.tip }}</span>
         </span>
-        <span class="cell col-stare"><DoneBadge :marcaj="facut(t)" /></span>
+        <span class="cell col-stare">
+          <TickButton v-if="elev" :bifa="bifat(t)" :descriere="t.nume" @toggle="comuta(t)" />
+          <DoneBadge v-else :marcaj="facut(t)" />
+        </span>
         <span class="cell cell--end col-doc">
           <PdfLink :href="t.urlSubiect" label="Subiect" :descriere="t.nume" />
-          <PdfLink v-if="t.urlBarem" :href="t.urlBarem" label="Barem" variant="ghost" icon="clipboard" :descriere="t.nume" />
+          <PdfLink v-if="t.urlBarem" class="col-barem" :href="t.urlBarem" label="Barem" variant="ghost" icon="clipboard" :descriere="t.nume" />
           <span v-else class="no-file">Fără barem</span>
           <MarkMenu
+            v-if="!elev"
             tip="test"
             :item-id="t.id"
             :descriere="t.nume"
@@ -157,11 +214,11 @@ const randDeschis = ref(null);
   width: 112px;
 }
 .col-stare {
-  width: 168px;
+  width: 200px;
 }
 .col-doc {
   width: 384px;
-  gap: var(--s-1);
+  gap: var(--s-2);
 }
 .nume {
   padding-right: var(--s-4);
@@ -169,7 +226,8 @@ const randDeschis = ref(null);
 .meta {
   white-space: nowrap;
 }
-.no-file {
+.no-file,
+.col-barem {
   width: 108px;
 }
 .cautare {

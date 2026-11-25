@@ -17,7 +17,9 @@ import { store } from '../store.js';
       <h2>Ce face aplicația</h2>
       <p>
         „Teste EN” este un index personal al testelor și subiectelor de Evaluare Națională la matematică (clasa a VIII-a).
-        Le filtrează pe an, subiect și exercițiu și ține evidența a ce ai lucrat cu fiecare grupă de elevi.
+        Le filtrează pe an, subiect și exercițiu. Are două moduri, pe care le schimbi din bara de sus: ca
+        <strong>profesor</strong> ții evidența a ce ai lucrat cu fiecare grupă de elevi, iar ca <strong>elev</strong> bifezi
+        exercițiile și testele rezolvate și îți vezi progresul.
       </p>
       <p>
         Aplicația nu copiază și nu găzduiește niciun PDF. Butoanele „Deschide”, „Subiect” și „Barem” deschid fișierul
@@ -56,7 +58,7 @@ import { store } from '../store.js';
     <section class="bloc">
       <h2>Datele tale</h2>
       <p>
-        Grupele și marcajele se salvează doar în acest browser (localStorage). Aplicația nu trimite date nicăieri și nu
+        Rolul ales, grupele, marcajele și bifele se salvează doar în acest browser (localStorage). Aplicația nu trimite date nicăieri și nu
         are conturi. Dacă ștergi datele site-ului din browser sau folosești alt calculator, marcajele nu vor fi acolo.
       </p>
       <p v-if="!store.salvareDisponibila" class="nosave">
@@ -76,7 +78,8 @@ import { store } from '../store.js';
   gap: var(--s-3);
   padding: var(--s-5);
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
+  border-bottom-width: var(--edge-card);
   border-radius: var(--r-card);
   color: var(--text-secondary);
 }
@@ -87,13 +90,14 @@ import { store } from '../store.js';
   display: inline-flex;
   align-items: center;
   gap: var(--s-1);
-  color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 2px;
   word-break: break-all;
 }
 .link:hover {
-  color: var(--accent-hover);
+  color: var(--accent-edge);
 }
 .date {
   display: flex;

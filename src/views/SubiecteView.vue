@@ -8,11 +8,16 @@ import DoneBadge from '../components/DoneBadge.vue';
 import MarkMenu from '../components/MarkMenu.vue';
 import PdfLink from '../components/PdfLink.vue';
 import ProgressBar from '../components/ProgressBar.vue';
+import TickButton from '../components/TickButton.vue';
+import MyProgress from '../components/MyProgress.vue';
 import {
   ANI, SUBIECTE, EXERCITII, SETURI, NUMAR_EXERCITII, DESCRIERE_SET,
   subiecte, aniCuSubiecte, anImplicitSubiecte, eticheta, plural, potrivesteSubiect,
 } from '../data.js';
-import { store, marcaj } from '../store.js';
+import { store, marcaj, bifa, comutaBifa } from '../store.js';
+import { arataToast } from '../ui.js';
+
+const ICON_SUBIECT = { I: 'hash', II: 'triangle', III: 'puzzle' };
 
 const route = useRoute();
 const router = useRouter();
@@ -60,8 +65,11 @@ const rezultate = computed(() =>
   ),
 );
 
-const grupa = computed(() => store.grupe.find((g) => g.id === store.grupaSelectata) || null);
+const elev = computed(() => store.rol === 'elev');
+const grupa = computed(() => (elev.value ? null : store.grupe.find((g) => g.id === store.grupaSelectata) || null));
 const facut = (x) => (grupa.value ? marcaj(grupa.value.id, 'subiect', x.id) : null);
+const bifat = (x) => bifa('subiect', x.id);
+const descriere = (x) => `${x.an}${x.set ? ' set ' + x.set : ''} ${eticheta(x)}`;
 const arataSet = computed(() => rezultate.value.some((x) => x.set));
 
 // tabele: pe subiect; la căutare, pe an (și set). La „Toți anii” apare coloana „An”.
@@ -75,15 +83,20 @@ const sectiuni = computed(() => {
       let titlu;
       if (peAn.value) titlu = x.set ? `${x.an} · Set ${x.set}` : String(x.an);
       else titlu = ex.value ? `Subiectul ${x.subiect} · Exercițiul ${ex.value}` : `Subiectul ${x.subiect}`;
-      grupe.set(cheie, { cheie, titlu, randuri: [] });
+      grupe.set(cheie, { cheie, titlu, subiect: peAn.value ? null : x.subiect, randuri: [] });
     }
     grupe.get(cheie).randuri.push(x);
   }
   return [...grupe.values()].map((sec) => {
-    const facute = sec.randuri.filter(facut).length;
     const n = sec.randuri.length;
     let meta = plural(n, 'exercițiu', 'exerciții');
-    if (grupa.value) meta += ` · ${facute} ${facute === 1 ? 'făcut' : 'făcute'} de ${grupa.value.nume}`;
+    if (elev.value) {
+      const b = sec.randuri.filter(bifat).length;
+      meta += ` · ${b} ${b === 1 ? 'bifat' : 'bifate'}`;
+    } else if (grupa.value) {
+      const facute = sec.randuri.filter(facut).length;
+      meta += ` · ${facute} ${facute === 1 ? 'făcut' : 'făcute'} de ${grupa.value.nume}`;
+    }
     return { ...sec, meta };
   });
 });
@@ -107,6 +120,41 @@ const progres = computed(() => {
   const facute = new Set(dinAn.filter(facut).map(eticheta));
   return { facute: facute.size, total: pozitii.size || NUMAR_EXERCITII };
 });
+
+// ---------- elev: progresul pe anul ales (sau pe toți anii) ----------
+const progresAn = (a) => {
+  const lista = a === null ? subiecte : subiecte.filter((x) => x.an === a);
+  return { lista, bifate: lista.filter(bifat).length, total: lista.length };
+};
+const progresElev = computed(() => {
+  if (!elev.value) return null;
+  const p = progresAn(an.value);
+  if (!p.total) return null;
+  const urm = p.lista.find((x) => !bifat(x));
+  const rest = p.total - p.bifate;
+  let indemn = 'Bifează un exercițiu după ce l-ai rezolvat.';
+  if (!rest) indemn = 'Le-ai rezolvat pe toate. Bravo!';
+  else if (p.bifate) indemn = `Mai ai ${plural(rest, 'exercițiu', 'exerciții')}.`;
+  if (rest && urm) indemn += ` Următorul: ${urm.set ? `Set ${urm.set} · ` : ''}${eticheta(urm)}${urm.tema ? ` · ${urm.tema}` : ''}.`;
+  return {
+    titlu: an.value === null ? 'Progresul tău, toți anii' : `Progresul tău în ${an.value}`,
+    bifate: p.bifate,
+    total: p.total,
+    indemn,
+  };
+});
+
+function comuta(x) {
+  const r = comutaBifa('subiect', x.id);
+  const et = `${x.set ? `Set ${x.set} · ` : ''}${eticheta(x)}`;
+  if (r.bifat) {
+    const p = progresAn(x.an);
+    const text = p.bifate === p.total ? `Ai terminat tot anul ${x.an}!` : `${x.an} · Ai ajuns la ${p.bifate} din ${p.total}.`;
+    arataToast(text, r.anuleaza, { titlu: `Bravo! Ai bifat ${et}.`, vesel: true });
+  } else {
+    arataToast(`Am scos bifa de la ${x.an} · ${et}`, r.anuleaza);
+  }
+}
 
 const randDeschis = ref(null);
 </script>
@@ -138,9 +186,18 @@ const randDeschis = ref(null);
       <div class="filter-split">
         <FilterChips label="2 · Subiect" :options="optSubiect" :model-value="s" @update:model-value="(v) => seteaza({ s: v })" />
         <FilterChips label="3 · Exercițiu" :options="optEx" :model-value="ex" @update:model-value="(v) => seteaza({ ex: v })" />
-        <GroupSelect />
+        <GroupSelect v-if="!elev" />
       </div>
     </section>
+
+    <MyProgress
+      v-if="progresElev"
+      :titlu="progresElev.titlu"
+      :value="progresElev.bifate"
+      :max="progresElev.total"
+      unitate="exerciții bifate"
+      :indemn="progresElev.indemn"
+    />
 
     <div class="summary">
       <div class="summary__text">
@@ -172,6 +229,7 @@ const randDeschis = ref(null);
 
     <section v-for="sec in sectiuni" :key="sec.cheie" class="section" :aria-label="sec.titlu">
       <div class="section-head">
+        <span v-if="sec.subiect" class="tile" :class="`tile--${sec.subiect}`" aria-hidden="true"><Icon :name="ICON_SUBIECT[sec.subiect]" :size="22" /></span>
         <h2>{{ sec.titlu }}</h2>
         <span class="section-meta">{{ sec.meta }}</span>
       </div>
@@ -181,12 +239,17 @@ const randDeschis = ref(null);
           <span class="cell caption col-ex">Ex.</span>
           <span v-if="arataSet" class="cell caption col-set">Set</span>
           <span class="cell cell--grow caption">Temă</span>
-          <span class="cell caption col-stare">{{ grupa ? grupa.nume : 'Stare' }}</span>
+          <span class="cell caption col-stare">{{ elev ? 'Statusul tău' : grupa ? grupa.nume : 'Stare' }}</span>
           <span class="cell cell--end caption col-act">Acțiuni</span>
         </div>
-        <div v-for="x in sec.randuri" :key="x.id" class="row" :class="{ 'row--highlight': randDeschis === x.id }">
+        <div
+          v-for="x in sec.randuri"
+          :key="x.id"
+          class="row"
+          :class="{ 'row--highlight': randDeschis === x.id, 'row--done': elev && bifat(x) }"
+        >
           <span v-if="arataAn" class="cell ex col-an">{{ x.an }}</span>
-          <span class="cell ex col-ex">{{ eticheta(x) }}</span>
+          <span class="cell col-ex"><span class="ex-tile" :class="`ex-tile--${x.subiect}`">{{ eticheta(x) }}</span></span>
           <span v-if="arataSet" class="cell col-set">
             <span v-if="x.set"><span class="strong">Set {{ x.set }}</span><span v-if="DESCRIERE_SET[x.set]" class="muted"> · {{ DESCRIERE_SET[x.set] }}</span></span>
           </span>
@@ -194,13 +257,17 @@ const randDeschis = ref(null);
             <span v-if="x.clasa" class="badge badge--topic">cl. {{ x.clasa }}</span>
             <span v-if="x.tema" class="secondary ellipsis" :title="x.tema">{{ x.tema }}</span>
           </span>
-          <span class="cell col-stare"><DoneBadge :marcaj="facut(x)" /></span>
+          <span class="cell col-stare">
+            <TickButton v-if="elev" :bifa="bifat(x)" :descriere="descriere(x)" @toggle="comuta(x)" />
+            <DoneBadge v-else :marcaj="facut(x)" />
+          </span>
           <span class="cell cell--end col-act">
-            <PdfLink :href="x.url" :descriere="`${x.an}${x.set ? ' set ' + x.set : ''} ${eticheta(x)}`" />
+            <PdfLink :href="x.url" :descriere="descriere(x)" />
             <MarkMenu
+              v-if="!elev"
               tip="subiect"
               :item-id="x.id"
-              :descriere="`${x.an}${x.set ? ' set ' + x.set : ''} ${eticheta(x)}`"
+              :descriere="descriere(x)"
               @open="randDeschis = x.id"
               @close="randDeschis === x.id && (randDeschis = null)"
             />
@@ -216,17 +283,17 @@ const randDeschis = ref(null);
   width: 72px;
 }
 .col-ex {
-  width: 80px;
+  width: 96px;
 }
 .col-set {
   width: 200px;
 }
 .col-stare {
-  width: 184px;
+  width: 200px;
 }
 .col-act {
   width: 272px;
-  gap: var(--s-5);
+  gap: var(--s-3);
 }
 .cautare {
   display: flex;
