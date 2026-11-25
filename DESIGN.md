@@ -264,6 +264,13 @@ Numerele din tabel cu `font-variant-numeric: tabular-nums`.
 - Înălțimi: bară sus 72; element meniu 52; rând tabel 68; buton și filtru 44.
 
 
+### Animații (doar tema „elev”)
+- Bifa: cercul crește la 130% și revine (0,35 s). Bara mare: `width` cu un mic arc la capăt (0,6 s) și o dungă de lumină care trece peste ea când crește.
+- Rapo clipește la 4,5 s în cardul de progres și pe ecranul de alegere a rolului; nu în logo (mișcarea permanentă la marginea ecranului distrage).
+- La un subiect sau un an terminat: ~90 de bucăți de confetti în culorile temei (3 s, fără să blocheze click-urile) și Rapo care sare de două ori în mesaj.
+- Seria „N zile la rând”: pastilă galbenă cu stea dacă azi s-a bifat ceva; altfel contur galben și „continuă azi”.
+- Toate se opresc cu `prefers-reduced-motion: reduce`.
+
 ### Ton
 - Exclamări doar în mesajele de reușită („Bravo! Ai bifat I.3.”) și în îndemnurile din cardul de progres.
 - Focus vizibil: contur 3 px `accent`.

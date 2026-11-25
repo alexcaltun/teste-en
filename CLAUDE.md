@@ -59,6 +59,12 @@ Fișierele PDF rămân pe e3.ro: aplicația doar trimite la ele.
 - **Profesor:** totul ca mai jos (grupe, „Marchează”, „Grupele mele”), cu aspectul inițial din `DESIGN.md` (secțiunile 3–10).
 - **Aspectul elevului** e tema „elev” din `DESIGN.md` (secțiunea 11); se aplică și pe ecranul de alegere a rolului.
 - **Elev:** fără grupe (dispar din meniu, iar `#/grupe` duce la subiecte), fără selectorul de grupă și fără „Marchează”. Coloana de stare devine „Statusul tău”, cu butonul „Bifează” / „Bifat · dată”, care se comută dintr-un click. Deasupra rezultatelor apare cardul „Progresul tău în <an>” (sau „toți anii”): bifate din total pentru anul ales. După bifare apare mesajul „Bravo! Ai bifat …”, cu „Anulează”.
+- **Gamificarea elevului** (doar elev; `src/joc.js`):
+  - **Seria „N zile la rând”**: zile consecutive cu cel puțin o bifă, calculate din datele bifelor (fără date noi). Pastila din cardul de progres e galbenă dacă azi s-a bifat ceva, altfel conturată, cu „continuă azi”. La prima bifă din zi, mesajul spune „Seria ta: N zile la rând!”.
+  - **Sărbătoare** cu confetti și Rapo care sare, când se termină un subiect (toate exercițiile lui dintr-un an și set), un an de subiecte sau toate testele unui an.
+  - **Micro-animații**: bifa „sare”, bara de progres se umple cu un mic arc și strălucește când crește, Rapo clipește în cardul de progres și pe ecranul de alegere a rolului.
+  - Cu „animații reduse” din sistem (`prefers-reduced-motion`): fără confetti și fără animații.
+  - Fără puncte, niveluri, clasamente sau sunete.
 
 ## Ecranele
 
